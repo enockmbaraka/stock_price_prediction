@@ -2,3 +2,5 @@
 Stock Price Prediction
 
 https://github.com/cristianpjensen/stock-market-prediction-via-google-trends
+
+## Data collection
