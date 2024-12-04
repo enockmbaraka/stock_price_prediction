@@ -5,6 +5,8 @@ https://github.com/cristianpjensen/stock-market-prediction-via-google-trends
 
 ## Stock Market Price Estimation
 
+Stock market price estimation is a crucial aspect of financial analysis that impacts investors, companies, and analysts alike. The goal is to achieve accurate and reliable results to guide decision-making and minimize risks.
+
 Inaccurate estimations can lead to:
 
 - **Investor Losses:** Misleading predictions may cause poor investment decisions.
