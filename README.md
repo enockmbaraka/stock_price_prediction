@@ -3,6 +3,14 @@ Stock Price Prediction
 
 https://github.com/cristianpjensen/stock-market-prediction-via-google-trends
 
+## Stock Market Price Estimation
+
+Inaccurate estimations can lead to:
+
+- **Investor Losses:** Misleading predictions may cause poor investment decisions.
+- **Market Panic:** Overly pessimistic forecasts can trigger unnecessary sell-offs.
+- **Reputational Risk:** Financial institutions or analysts may lose credibility.
+
 ## Data collection
 
 ## Stock Price Dataset Description
