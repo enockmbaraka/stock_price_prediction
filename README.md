@@ -23,8 +23,11 @@ You can download the data in two steps as outlined below:
 
 
 1) Specify the companies.
+
 ```tickers = ['GOOGL', 'META', 'AAPL', 'NVDA']```
+
 2) Decide on the start and end dates, then download the data.
+
 ```stock_data = yf.download(tickers, start="2021-10-30", end="2024-10-30", group_by="ticker")```
 
 
