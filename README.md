@@ -13,9 +13,11 @@ Inaccurate estimations can lead to:
 - **Market Panic:** Overly pessimistic forecasts can trigger unnecessary sell-offs.
 - **Reputational Risk:** Financial institutions or analysts may lose credibility.
 
-I used the [ ```yfinance```](https://github.com/ranaroussi/yfinance/tree/main?tab=readme-ov-file) library to download stock market price data for four companies—Google, Meta, Apple, and NVIDIA—from October 30, 2021, to October 30, 2024.
+
 
 ## Data collection
+
+I used the [ ```yfinance```](https://github.com/ranaroussi/yfinance/tree/main?tab=readme-ov-file) library to download stock market price data for four companies—Google, Meta, Apple, and NVIDIA—from October 30, 2021, to October 30, 2024.
 
 [Yahoo!Ⓡ finance](https://finance.yahoo.com/).
 
