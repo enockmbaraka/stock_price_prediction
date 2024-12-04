@@ -13,7 +13,7 @@ Inaccurate estimations can lead to:
 - **Market Panic:** Overly pessimistic forecasts can trigger unnecessary sell-offs.
 - **Reputational Risk:** Financial institutions or analysts may lose credibility.
 
-
+My aim is to analyze stock market price data for Google, Meta, Apple, and NVIDIA between October 30, 2021, and October 30, 2024, and provide an estimator while deploying my model both locally and to the cloud.
 
 ## Data collection
 
