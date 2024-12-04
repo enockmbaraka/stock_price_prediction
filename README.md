@@ -19,6 +19,14 @@ Inaccurate estimations can lead to:
 
 I used the [ ```yfinance```](https://github.com/ranaroussi/yfinance/tree/main?tab=readme-ov-file) library to download stock market price data for four companies—Google, Meta, Apple, and NVIDIA—from October 30, 2021, to October 30, 2024. The yfinance library is a Python tool for accessing historical market data, financial metrics, and company information from [Yahoo!Ⓡ finance](https://finance.yahoo.com/).
 
+You can download the data in two steps as outlined below:
+
+
+1) Specify the companies.
+```tickers = ['GOOGL', 'META', 'AAPL', 'NVDA']```
+2) Decide on the start and end dates, then download the data.v
+```stock_data = yf.download(tickers, start="2021-10-30", end="2024-10-30", group_by="ticker")```
+
 
 
  " ```yfinance``` is not affiliated, endorsed, or vetted by Yahoo, Inc. It's an open-source tool that uses Yahoo's publicly available APIs, and is intended for research and educational purposes. You should refer to Yahoo!'s terms of use ([here](https://legal.yahoo.com/us/en/yahoo/terms/product-atos/apiforydn/index.html), [here](https://legal.yahoo.com/us/en/yahoo/terms/otos/index.html), and [here](https://policies.yahoo.com/us/en/yahoo/terms/index.htm)) for details on your rights to use the actual data downloaded."
