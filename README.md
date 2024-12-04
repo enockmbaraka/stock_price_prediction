@@ -15,6 +15,10 @@ Inaccurate estimations can lead to:
 
 ## Data collection
 
+ " ```yfinance``` is not affiliated, endorsed, or vetted by Yahoo, Inc. It's an open-source tool that uses Yahoo's publicly available APIs, and is intended for research and educational purposes. You should refer to Yahoo!'s terms of use ([here](https://legal.yahoo.com/us/en/yahoo/terms/product-atos/apiforydn/index.html), [here](https://legal.yahoo.com/us/en/yahoo/terms/otos/index.html), and [here](https://policies.yahoo.com/us/en/yahoo/terms/index.htm)) for details on your rights to use the actual data downloaded.
+
+
+
 ## Stock Price Dataset Description
 
 This dataset contains daily stock price information, which is useful for analyzing stock performance, predicting trends, or conducting financial research.
