@@ -3,8 +3,8 @@ Stock Price Prediction
 
 # Table of Contents
 
-1. [Stock Market Price Estimation](#Stock Market Price Estimation)
-2. [Data Collection](#Data Collection)
+1. [Stock Market Price Estimation](#stock-market-price-estimation)
+2. [Data Collection](#data-collection)
 3. [Installation](#installation)
 4. [Usage](#usage)
 5. [Data](#data)
