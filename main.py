@@ -42,7 +42,7 @@ def predict(data: StockData):
         prediction = model.predict(scaled_values)
 
         # Return the predicted close price
-        return {"predicted_close_price": float(prediction[0][0])}
+        return {"predicted_close_price": float(preprocessor.inverse_transform(prediction[0][0].reshape(1, -1)))}
 
     except Exception as e:
         raise HTTPException(status_code=422, detail=str(e))
