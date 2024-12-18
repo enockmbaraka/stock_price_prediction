@@ -66,3 +66,8 @@ This dataset contains daily stock price information, which is useful for analyzi
 
 ```git clone https://github.com/f-kuzey-edes-huyal/stock_price_prediction.git```
 
+__To-Do List:__
+
+- Find a way to efficiently dockerize the TensorFlow model.
+- Evaluate the Docker image.
+- Get a smaller image and try AWS deployment before meeting with AJ!
