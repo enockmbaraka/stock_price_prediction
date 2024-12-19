@@ -6,3 +6,5 @@ venv/
 
 # Ignore system-generated files 
 Thumbs.db  
+
+**/__pycache__/
