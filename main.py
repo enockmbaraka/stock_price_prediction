@@ -1,8 +1,27 @@
 import numpy as np
 import pickle
+import tensorflow as tf
 from tensorflow.keras.models import load_model
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel, conlist
+
+@tf.keras.utils.register_keras_serializable(package="Custom", name="symmetric_mean_absolute_percentage_error")
+def symmetric_mean_absolute_percentage_error(y_true, y_pred):
+    """
+    Computes Symmetric Mean Absolute Percentage Error (SMAPE).
+
+    Args:
+        y_true: Ground truth values.
+        y_pred: Predicted values.
+
+    Returns:
+        SMAPE as a TensorFlow tensor.
+    """
+    numerator = tf.abs(y_true - y_pred)
+    denominator = (tf.abs(y_true) + tf.abs(y_pred)) / 2
+    smape = tf.reduce_mean(numerator / denominator) * 100
+    return smape
+
 
 # Initialize FastAPI app
 app = FastAPI()
@@ -12,7 +31,7 @@ class StockData(BaseModel):
     time_series: conlist(float)  # Enforce list of floats with at least one item
 
 # Load the .keras model and preprocessing logic (once when the app starts)
-model = load_model("outputs/stock_price_rnn_model.keras")  # Load the .keras model
+model = load_model("outputs/stock_price_rnn_google_model.keras")  # Load the .keras model
 with open("outputs/google_scale.pkl", 'rb') as f_in:
     preprocessor = pickle.load(f_in)  # Load the preprocessing object
 
