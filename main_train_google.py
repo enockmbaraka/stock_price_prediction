@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
+# In[9]:
 
 
 import numpy as np
@@ -19,9 +19,14 @@ import pickle
 import matplotlib.pyplot as plt
 import tensorflow.lite as tflite
 import random
+import os
+import pandas as pd
+import numpy as np
+from sklearn.preprocessing import MinMaxScaler
+import pickle
 
 
-# In[2]:
+# In[10]:
 
 
 SEED = 42
@@ -32,14 +37,8 @@ os.environ['TF_DETERMINISTIC_OPS'] = '1'
 os.environ['TF_CUDNN_DETERMINISTIC'] = '1'
 
 
-# In[3]:
+# In[11]:
 
-
-import os
-import pandas as pd
-import numpy as np
-from sklearn.preprocessing import MinMaxScaler
-import pickle
 
 def preprocess_stock_data(
     csv_path, 
@@ -144,7 +143,7 @@ def preprocess_stock_data(
 
 
 
-# In[4]:
+# In[12]:
 
 
 data = "inputs/google_stock_cleaned.csv"
@@ -170,14 +169,14 @@ except Exception as e:
     print(f"Unexpected Error: {e}")
 
 
-# In[5]:
+# In[13]:
 
 
 print("X_train shape:", X_train.shape)
 print("y_train shape:", y_train.shape)
 
 
-# In[6]:
+# In[14]:
 
 
 from tensorflow.keras.models import Sequential, load_model
@@ -311,7 +310,7 @@ class StockPricePredictor_Google:
 
 
 
-# In[7]:
+# In[15]:
 
 
 data_path_google = "inputs/google_stock_cleaned.csv"
@@ -328,37 +327,7 @@ data_path_google = "inputs/google_stock_cleaned.csv"
 
 
 
-# In[8]:
-
-
-if __name__ == "__main__":
-    # Example input data
-    input_shape = (60, 1)  # 60 time steps, 1 feature (e.g., close price)
-    predictor = StockPricePredictor_Google(input_shape=input_shape)
-
-    # Training
-    predictor.train(X_train, y_train, validation_data=(X_val, y_val))
-
-    # Prediction
-    predictions = predictor.predict(X_test)
-
-    
-    model_path = "outputs/stock_price_rnn_google_model.keras"
-    scaler_path = "outputs/google_scale.pkl"
-    
-    predictor.save(model_path)
-
-    # Load model and scaler for inference
-    loaded_model, loaded_scaler = StockPricePredictor_Google.load(model_path, scaler_path)
-    predictions = loaded_model.predict(X_test)
-    predictions_rescaled = loaded_scaler.inverse_transform(predictions)
-
-    print("Predictions (rescaled):", predictions_rescaled)
-
-    
-
-
-# In[9]:
+# In[16]:
 
 
 if __name__ == "__main__":
@@ -406,7 +375,7 @@ if __name__ == "__main__":
 
 
 
-# In[10]:
+# In[17]:
 
 
 plt.figure(figsize=(12, 6))
@@ -417,6 +386,7 @@ plt.xlabel("Time Steps",fontsize = 20)
 plt.ylabel("Stock Price (Original Scale)",fontsize = 20)
 plt.legend(fontsize = 20)
 plt.grid(True)
+plt.savefig('results/google_result.png', bbox_inches='tight')
 plt.show()
 
 
@@ -427,7 +397,7 @@ plt.show()
 
 
 
-# In[11]:
+# In[18]:
 
 
 X_test_reshaped = X_test.reshape(X_test.shape[0], -1)
@@ -435,10 +405,10 @@ print(*loaded_scaler.inverse_transform(X_test_reshaped))
 len(X_test_reshaped[0])
 
 
-# In[14]:
+# In[ ]:
 
 
-jupyter nbconvert --to script main_train_google.ipynb
+get_ipython().system('jupyter nbconvert --to script main_train_google.ipynb')
 
 
 # In[ ]:
