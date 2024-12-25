@@ -8,6 +8,17 @@ WORKDIR /app
 COPY requirements.txt .
 
 
+# Install system dependencies and Rust
+RUN apt-get update && apt-get install -y \
+    build-essential libssl-dev libffi-dev python3-dev curl \
+    && curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y \
+    && echo 'export PATH=$HOME/.cargo/bin:$PATH' >> ~/.bashrc \
+    && /bin/bash -c "source ~/.bashrc"
+
+# Add Rust binary to PATH for non-interactive shells
+ENV PATH="/root/.cargo/bin:${PATH}"
+
+
 RUN pip install --upgrade pip
 
 RUN apt-get update && apt-get install -y build-essential libssl-dev libffi-dev python3-dev
