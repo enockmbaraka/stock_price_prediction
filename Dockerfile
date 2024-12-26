@@ -7,28 +7,23 @@ WORKDIR /app
 # Copy the requirements file into the container
 COPY requirements.txt .
 
-
 # Install system dependencies and Rust
-RUN apt-get update && apt-get install -y \
-    build-essential libssl-dev libffi-dev python3-dev curl \
+RUN apt-get update && apt-get install -y curl build-essential libssl-dev libffi-dev python3-dev \
     && curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y \
-    && echo 'export PATH=$HOME/.cargo/bin:$PATH' >> ~/.bashrc \
-    && /bin/bash -c "source ~/.bashrc"
+    && . "/root/.cargo/env"
 
-# Add Rust binary to PATH for non-interactive shells
-ENV PATH="/root/.cargo/bin:${PATH}"
+# Add Rust binary to PATH
+ENV PATH="/root/.cargo/bin:$PATH"
 
-
+# Upgrade pip
 RUN pip install --upgrade pip
 
-RUN apt-get update && apt-get install -y build-essential libssl-dev libffi-dev python3-dev
-
-
-
-# Install dependencies
+# Install Python dependencies
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Copy the FastAPI app and test file into the container
+# Ensure that `project.version` is correctly set in pyproject.toml to avoid maturin issues
+#COPY pyproject.toml . 
+# Copy the FastAPI app
 COPY main.py .
 
 # Copy the models
