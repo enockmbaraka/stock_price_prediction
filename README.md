@@ -67,10 +67,12 @@ When I tried to use the requirements.txt file that I prepared in my Windows envi
 
 <code> docker build -t stockmarket . </code>
 
-docker run -p 8000:8000 stockmarket </code>
+<code> docker run -p 8000:8000 stockmarket </code>
 
 <code> docker login </code>
+
 <code> docker tag stockmarket   fkuzeyedeshuyal/stockmarket </code>
+
 <code> docker push fkuzeyedeshuyal/stockmarket </code>
 
 
