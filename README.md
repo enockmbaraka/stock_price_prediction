@@ -68,6 +68,9 @@ When I tried to use the requirements.txt file that I prepared in my Windows envi
 <code> docker build -t stockmarket . </code>
 
 docker run -p 8000:8000 stockmarket
+
+docker logindocker tag stockmarket   fkuzeyedeshuyal/stockmarket
+docker push fkuzeyedeshuyal/stockmarket
 ## Installation
 
 ```git clone https://github.com/f-kuzey-edes-huyal/stock_price_prediction.git```
