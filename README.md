@@ -10,8 +10,9 @@ Stock Price Prediction
 5. [Data](#data)
 6. [Model](#model)
 7. [Deployment](#deployment)
-8. [License](#license)
-9. [Acknowledgements](#acknowledgements)
+8. [Containerization using Docker](#containerization)
+9. [License](#license)
+10. [Acknowledgements](#acknowledgements)
 
 
 ## Stock Market Price Estimation
@@ -61,7 +62,10 @@ This dataset contains daily stock price information, which is useful for analyzi
 | **Adj Close**    | The closing price adjusted for corporate actions like stock splits, dividends, and rights offerings. |
 | **Volume**       | The total number of shares traded during the trading day. This reflects market activity and liquidity.|
 
+## Containerization using Docker
+When I tried to use the requirements.txt file that I prepared in my Windows environment in a Linux-based Docker environment, I encountered compatibility issues. To resolve this, I copied the packages listed in the <code> requirements.txt </code> file, which I had created using <code> pip freeze > requirements.txt </code>, and asked ChatGPT to generate a new requirements.txt file. I then used the updated requirements.txt file suggested by ChatGPT.
 
+<code> docker build -t stockmarket . </code>
 ## Installation
 
 ```git clone https://github.com/f-kuzey-edes-huyal/stock_price_prediction.git```
