@@ -79,7 +79,7 @@ __Disadvantages:__
 - Struggles with long-term dependencies.
 - Prone to vanishing gradient issues, leading to poorer performance on long sequences.
 
-#### Neural Networks (NNs)__
+#### Neural Networks (NNs)
 
 Standard neural networks (e.g., feedforward networks) are less commonly used in time series because they don't inherently account for sequential information. They treat each input as independent, which may lead to loss of critical temporal patterns unless engineered features are explicitly provided.
 
@@ -93,7 +93,7 @@ __Disadvantages:__
 - Does not natively capture sequential dependencies in the data.
 - Requires manual feature engineering to represent time-based patterns effectively.
  
-__Long Short-Term Memory Networks (LSTMs)__
+#### Long Short-Term Memory Networks (LSTMs)
 
 LSTMs extend RNNs by incorporating memory cells and gates to selectively remember or forget information. This makes them well-suited for time series with long-term dependencies. They have been widely used in applications like stock price prediction, weather forecasting, and anomaly detection.
 
@@ -107,7 +107,7 @@ __Disadvantages:__
 - Higher computational complexity compared to RNNs.
 - Requires more tuning and longer training times
 
-__Transformers__
+#### Transformers
 
 Transformers revolutionized natural language processing and are increasingly applied to time series. Their self-attention mechanism allows them to capture both short-term and long-term dependencies efficiently. Transformers excel in handling irregular sampling and multivariate time series, making them powerful but computationally demanding.
 
@@ -121,7 +121,7 @@ __Disadvantages:__
 - Computationally intensive, especially for large datasets or high-dimensional data.
 - Requires large datasets for effective training, which can be a limitation for some time series problems.
 
-__Ordinary Differential Equations (ODEs)__
+#### Ordinary Differential Equations (ODEs)
 
 ODE-based models are a different beast altogether. Instead of treating the data as discrete points, they model continuous changes in time, making them especially useful for time series where smooth dynamics are essential (e.g., physical systems, population growth, or epidemiology). Neural ODEs combine ODEs with neural networks, offering a flexible yet interpretable framework.
 
