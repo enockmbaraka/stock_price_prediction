@@ -62,6 +62,26 @@ This dataset contains daily stock price information, which is useful for analyzi
 | **Adj Close**    | The closing price adjusted for corporate actions like stock splits, dividends, and rights offerings. |
 | **Volume**       | The total number of shares traded during the trading day. This reflects market activity and liquidity.|
 
+## Training
+
+### Models
+__Recurrent Neural Networks (RNNs)__
+
+RNNs are designed to process sequential data by maintaining a memory of past inputs. This makes them a natural choice for time series, where patterns over time are critical. However, they struggle with long-term dependencies due to the vanishing gradient problem. While simpler and faster to train than some advanced models, their limited capacity to capture long-range relationships can be a drawback for complex time series.
+
+__Advantages:__
+
+- Simple architecture that captures short-term dependencies well.
+- Computationally less expensive compared to more complex models.
+- 
+__Disadvantages:__
+
+- Struggles with long-term dependencies.
+- Prone to vanishing gradient issues, leading to poorer performance on long sequences.
+
+### Hyperparameter Tuning
+
+### Training 
 ## Containerization using Docker
 When I tried to use the requirements.txt file that I prepared in my Windows environment in a Linux-based Docker environment, I encountered compatibility issues. To resolve this, I copied the packages listed in the <code> requirements.txt </code> file, which I had created using <code> pip freeze > requirements.txt </code>, and asked ChatGPT to generate a new requirements.txt file. I then used the updated requirements.txt file suggested by ChatGPT.
 
