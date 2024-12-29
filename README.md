@@ -65,7 +65,7 @@ This dataset contains daily stock price information, which is useful for analyzi
 ## Training
 
 ### Models
-__Recurrent Neural Networks (RNNs)__
+#### Recurrent Neural Networks (RNNs)
 
 RNNs are designed to process sequential data by maintaining a memory of past inputs. This makes them a natural choice for time series, where patterns over time are critical. However, they struggle with long-term dependencies due to the vanishing gradient problem. While simpler and faster to train than some advanced models, their limited capacity to capture long-range relationships can be a drawback for complex time series.
 
@@ -79,7 +79,7 @@ __Disadvantages:__
 - Struggles with long-term dependencies.
 - Prone to vanishing gradient issues, leading to poorer performance on long sequences.
 
-__Neural Networks (NNs)__
+#### Neural Networks (NNs)__
 
 Standard neural networks (e.g., feedforward networks) are less commonly used in time series because they don't inherently account for sequential information. They treat each input as independent, which may lead to loss of critical temporal patterns unless engineered features are explicitly provided.
 
@@ -120,6 +120,20 @@ __Disadvantages:__
 
 - Computationally intensive, especially for large datasets or high-dimensional data.
 - Requires large datasets for effective training, which can be a limitation for some time series problems.
+
+__Ordinary Differential Equations (ODEs)__
+
+ODE-based models are a different beast altogether. Instead of treating the data as discrete points, they model continuous changes in time, making them especially useful for time series where smooth dynamics are essential (e.g., physical systems, population growth, or epidemiology). Neural ODEs combine ODEs with neural networks, offering a flexible yet interpretable framework.
+
+__Advantages:__
+
+- Provides a continuous perspective on time, which is valuable for smooth or physics-inspired time series.
+- More interpretable in scientific contexts, connecting directly to underlying processes.
+
+__Disadvantages:__
+
+Computationally intensive to solve, especially for stiff ODEs.
+Requires domain knowledge for meaningful parameterization.
 
 ### Hyperparameter Tuning
 
