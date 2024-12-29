@@ -132,8 +132,8 @@ __Advantages:__
 
 __Disadvantages:__
 
-Computationally intensive to solve, especially for stiff ODEs.
-Requires domain knowledge for meaningful parameterization.
+- Computationally intensive to solve, especially for stiff ODEs.
+- Requires domain knowledge for meaningful parameterization.
 
 ### Hyperparameter Tuning
 
