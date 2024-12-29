@@ -73,7 +73,7 @@ __Advantages:__
 
 - Simple architecture that captures short-term dependencies well.
 - Computationally less expensive compared to more complex models.
-- 
+
 __Disadvantages:__
 
 - Struggles with long-term dependencies.
