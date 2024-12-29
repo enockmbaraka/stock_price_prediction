@@ -79,6 +79,20 @@ __Disadvantages:__
 - Struggles with long-term dependencies.
 - Prone to vanishing gradient issues, leading to poorer performance on long sequences.
 
+ 
+__Long Short-Term Memory Networks (LSTMs)__
+
+LSTMs extend RNNs by incorporating memory cells and gates to selectively remember or forget information. This makes them well-suited for time series with long-term dependencies. They have been widely used in applications like stock price prediction, weather forecasting, and anomaly detection.
+
+__Advantages:__
+
+- Handles both short-term and long-term dependencies effectively.
+- Robust to vanishing gradients, enabling better learning over extended sequences.
+
+__Disadvantages:__
+
+- Higher computational complexity compared to RNNs.
+- Requires more tuning and longer training times
 ### Hyperparameter Tuning
 
 ### Training 
