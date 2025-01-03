@@ -156,15 +156,19 @@ When I tried to use the requirements.txt file that I prepared in my Windows envi
 
 ## Deployment to Cloud
 
-![myimage-alt-tag1](https://github.com/f-kuzey-edes-huyal/stock_price_prediction/blob/main/results/final_instance_ip.png)
+I deployed my model on AWS using the following steps:
 
+- Go to EC2 Instances and click on Launch Instances.
+- Choose an AMI Image that is eligible for the Free Tier.
+- Create a Key Pair.
+- After setting the inbound rules correctly, launch the instance.
+  
 ![myimage-alt-tag2](https://github.com/f-kuzey-edes-huyal/stock_price_prediction/blob/main/results/final_inbound_rules.png)
 
+![myimage-alt-tag1](https://github.com/f-kuzey-edes-huyal/stock_price_prediction/blob/main/results/final_instance_ip.png)
+- Click on the created instance, then click Connect, and finally, click the Connect button again. This will open a Linux terminal
 
-![myimage-alt-tag3](https://github.com/f-kuzey-edes-huyal/stock_price_prediction/blob/main/results/final_aws_running1.png)
-
-![myimage-alt-tag4](https://github.com/f-kuzey-edes-huyal/stock_price_prediction/blob/main/results/final_aws_test.png)
-
+ -Write the following commands 
 ```sudo yum update -y```
 
 ```sudo yum install -y docker```
@@ -175,9 +179,26 @@ When I tried to use the requirements.txt file that I prepared in my Windows envi
 
 ```docker ps```
 
+
+
+
+Next, I pulled the Docker image I had previously pushed to Docker Hub. After pulling the image, I ran it using Docker.
+
+
 ```docker pull fkuzeyedeshuyal/stockmarket:latest``` 
 
 ```docker run -p 8000:8000 fkuzeyedeshuyal/stockmarket:latest```
+
+
+Initially, I encountered an error because the inbound security rules for my EC2 instance were not set correctly. You can see the error in the screenshot at the top of the result.
+
+This error was resolved after properly configuring the inbound rules for my EC2 instance.
+
+![myimage-alt-tag3](https://github.com/f-kuzey-edes-huyal/stock_price_prediction/blob/main/results/final_aws_running1.png)
+
+![myimage-alt-tag4](https://github.com/f-kuzey-edes-huyal/stock_price_prediction/blob/main/results/final_aws_test.png)
+
+
 
 
 ## Installation
