@@ -161,9 +161,9 @@ When I tried to use the requirements.txt file that I prepared in my Windows envi
 ![myimage-alt-tag2](https://github.com/f-kuzey-edes-huyal/stock_price_prediction/blob/main/results/final_inbound_rules.png)
 
 
-![myimage-alt-tag3](https://github.com/f-kuzey-edes-huyal/stock_price_prediction/blob/main/results/final_instance_ip.png)
+![myimage-alt-tag3](https://github.com/f-kuzey-edes-huyal/stock_price_prediction/blob/main/results/final_aws_running1.png)
 
-![myimage-alt-tag4]([url-to-image](https://github.com/f-kuzey-edes-huyal/stock_price_prediction/blob/main/results/final_aws_test.png))
+![myimage-alt-tag4](https://github.com/f-kuzey-edes-huyal/stock_price_prediction/blob/main/results/final_aws_test.png))
 
 `1`sudo yum update -y```
 
