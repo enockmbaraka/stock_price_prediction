@@ -168,7 +168,7 @@ I deployed my model on AWS using the following steps:
 ![myimage-alt-tag1](https://github.com/f-kuzey-edes-huyal/stock_price_prediction/blob/main/results/final_instance_ip.png)
 - Click on the created instance, then click Connect, and finally, click the Connect button again. This will open a Linux terminal
 
- -Write the following commands 
+ - Write the following commands 
 ```sudo yum update -y```
 
 ```sudo yum install -y docker```
