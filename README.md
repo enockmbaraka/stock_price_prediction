@@ -62,12 +62,99 @@ This dataset contains daily stock price information, which is useful for analyzi
 | **Adj Close**    | The closing price adjusted for corporate actions like stock splits, dividends, and rights offerings. |
 | **Volume**       | The total number of shares traded during the trading day. This reflects market activity and liquidity.|
 
+## Training
+
+### Models
+#### Recurrent Neural Networks (RNNs)
+
+RNNs are designed to process sequential data by maintaining a memory of past inputs. This makes them a natural choice for time series, where patterns over time are critical. However, they struggle with long-term dependencies due to the vanishing gradient problem. While simpler and faster to train than some advanced models, their limited capacity to capture long-range relationships can be a drawback for complex time series.
+
+__Advantages:__
+
+- Simple architecture that captures short-term dependencies well.
+- Computationally less expensive compared to more complex models.
+
+__Disadvantages:__
+
+- Struggles with long-term dependencies.
+- Prone to vanishing gradient issues, leading to poorer performance on long sequences.
+
+#### Neural Networks (NNs)
+
+Standard neural networks (e.g., feedforward networks) are less commonly used in time series because they don't inherently account for sequential information. They treat each input as independent, which may lead to loss of critical temporal patterns unless engineered features are explicitly provided.
+
+__Advantages:__
+
+- Simpler to implement and train for non-sequential data or aggregated features.
+- May perform well when time-dependent relationships are less critical.
+
+__Disadvantages:__
+
+- Does not natively capture sequential dependencies in the data.
+- Requires manual feature engineering to represent time-based patterns effectively.
+ 
+#### Long Short-Term Memory Networks (LSTMs)
+
+LSTMs extend RNNs by incorporating memory cells and gates to selectively remember or forget information. This makes them well-suited for time series with long-term dependencies. They have been widely used in applications like stock price prediction, weather forecasting, and anomaly detection.
+
+__Advantages:__
+
+- Handles both short-term and long-term dependencies effectively.
+- Robust to vanishing gradients, enabling better learning over extended sequences.
+
+__Disadvantages:__
+
+- Higher computational complexity compared to RNNs.
+- Requires more tuning and longer training times
+
+#### Transformers
+
+Transformers revolutionized natural language processing and are increasingly applied to time series. Their self-attention mechanism allows them to capture both short-term and long-term dependencies efficiently. Transformers excel in handling irregular sampling and multivariate time series, making them powerful but computationally demanding.
+
+__Advantages:__
+
+- Can model long-term dependencies effectively with the self-attention mechanism.
+- Handles multivariate time series and irregular time steps well.
+
+__Disadvantages:__
+
+- Computationally intensive, especially for large datasets or high-dimensional data.
+- Requires large datasets for effective training, which can be a limitation for some time series problems.
+
+#### Ordinary Differential Equations (ODEs)
+
+ODE-based models are a different beast altogether. Instead of treating the data as discrete points, they model continuous changes in time, making them especially useful for time series where smooth dynamics are essential (e.g., physical systems, population growth, or epidemiology). Neural ODEs combine ODEs with neural networks, offering a flexible yet interpretable framework.
+
+__Advantages:__
+
+- Provides a continuous perspective on time, which is valuable for smooth or physics-inspired time series.
+- More interpretable in scientific contexts, connecting directly to underlying processes.
+
+__Disadvantages:__
+
+- Computationally intensive to solve, especially for stiff ODEs.
+- Requires domain knowledge for meaningful parameterization.
+
+### Hyperparameter Tuning
+
+### Training 
 ## Containerization using Docker
 When I tried to use the requirements.txt file that I prepared in my Windows environment in a Linux-based Docker environment, I encountered compatibility issues. To resolve this, I copied the packages listed in the <code> requirements.txt </code> file, which I had created using <code> pip freeze > requirements.txt </code>, and asked ChatGPT to generate a new requirements.txt file. I then used the updated requirements.txt file suggested by ChatGPT.
 
 <code> docker build -t stockmarket . </code>
 
-docker run -p 8000:8000 stockmarket
+<code> docker run -p 8000:8000 stockmarket </code>
+
+<code> docker login </code>
+
+<code> docker tag stockmarket   fkuzeyedeshuyal/stockmarket </code>
+
+<code> docker push fkuzeyedeshuyal/stockmarket </code>
+
+
+<code> docker pull fkuzeyedeshuyal/stockmarket:latest </code>
+
+
 ## Installation
 
 ```git clone https://github.com/f-kuzey-edes-huyal/stock_price_prediction.git```
