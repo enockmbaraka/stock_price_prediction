@@ -156,6 +156,8 @@ When I tried to use the requirements.txt file that I prepared in my Windows envi
 
 ## Deployment to Cloud
 
+I want to begin this section by expressing my gratitude to Ajith Punnakula for his help and patience throughout the deployment process. Without his support, I might have been overwhelmed by numerous timeout errors.
+
 I deployed my model on AWS using the following steps:
 
 - Go to EC2 Instances and click on Launch Instances.
