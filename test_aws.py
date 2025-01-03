@@ -1,7 +1,7 @@
 import requests
 
 # Define the FastAPI endpoint URL
-url = "http://18.217.109.77:3000/predict"
+url = "http://3.147.27.72:8000/predict"
 
 # Example time-series data for four companies
 test_data = {
