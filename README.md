@@ -156,16 +156,19 @@ When I tried to use the requirements.txt file that I prepared in my Windows envi
 
 ## Deployment to Cloud
 
-sudo yum update -y
+``sudo yum update -y```
 
-sudo yum install -y docker
+```sudo yum install -y docker```
 
-sudo service docker start
-sudo usermod -a -G docker ec2-user
-docker ps
-docker pull fkuzeyedeshuyal/stockmarket:latest  
+```sudo service docker start```
 
-docker run -p 8000:8000 fkuzeyedeshuyal/stockmarket:latest
+```sudo usermod -a -G docker ec2-user```
+
+```docker ps```
+
+```docker pull fkuzeyedeshuyal/stockmarket:latest``` 
+
+```docker run -p 8000:8000 fkuzeyedeshuyal/stockmarket:latest```
 
 
 ## Installation
