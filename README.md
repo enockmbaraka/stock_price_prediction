@@ -139,6 +139,16 @@ __Disadvantages:__
 
 ### Training 
 
+__Why Use Early Stopping?__
+Early stopping is a regularization technique that helps prevent overfitting by halting the training process when the model's performance on the validation set stops improving. This ensures that the model generalizes well to unseen data rather than memorizing patterns from the training data.
+
+__Why Choose a Patience Value of 15?__
+A patience value of 15 strikes a balance between ensuring the model has enough time to converge and avoiding unnecessary training when improvements have plateaued. A smaller patience value (e.g., 5 or 10) might terminate training prematurely, especially in time series tasks, where validation loss often fluctuates before stabilizing. By allowing up to 15 epochs of no improvement, the model has the opportunity to fine-tune its weights and potentially discover a better solution.
+
+__Training Configuration__
+The total number of training epochs was set to 50. However, due to early stopping, training often concluded before reaching the maximum epoch limit, saving computational resources and reducing the risk of overfitting.
+
+
 First, you have to activate virtual environment:
 
 ```venv\Scripts\activate``` 
