@@ -155,13 +155,13 @@ First, you have to activate virtual environment:
 
 You can train the models running the codes provided below.
 
-```python main_train_google.py```
+[```python main_train_google.py```](https://github.com/f-kuzey-edes-huyal/stock_price_prediction/blob/main/main_train_google.py)
 
-```python main_train_meta.py```
+[```python main_train_meta.py```](https://github.com/f-kuzey-edes-huyal/stock_price_prediction/blob/main/main_train_apple.py)
 
-```python main_train_apple.py```
+[```python main_train_apple.py```](https://github.com/f-kuzey-edes-huyal/stock_price_prediction/blob/main/main_train_apple.py)
 
-```python main_train_nvidia.py```
+[```python main_train_nvidia.py```](https://github.com/f-kuzey-edes-huyal/stock_price_prediction/blob/main/main_train_nvidia.py)
 
 
 __Results Summary__
