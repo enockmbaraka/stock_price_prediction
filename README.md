@@ -138,6 +138,10 @@ __Disadvantages:__
 
 ### Hyperparameter Tuning
 
+I performed hyperparameter tuning separately for [Google](https://github.com/f-kuzey-edes-huyal/stock_price_prediction/blob/main/parameter_tuning/hyperparameter_tuning_google_last.ipynb), [Meta](https://github.com/f-kuzey-edes-huyal/stock_price_prediction/blob/main/parameter_tuning/hyperparameter_tuning_meta_last.ipynb), [Apple](https://github.com/f-kuzey-edes-huyal/stock_price_prediction/blob/main/parameter_tuning/hyperparameter_tuning_apple_last.ipynb), and [NVIDIA](https://github.com/f-kuzey-edes-huyal/stock_price_prediction/blob/main/parameter_tuning/hyperparameter_tuning_nvidia_last.ipynb) using Optuna, an efficient hyperparameter optimization framework. Optuna was chosen for its ability to perform automated and flexible optimization through Bayesian search strategies. Unlike grid or random search, Optuna dynamically adjusts its search based on previous results, helping to find optimal hyperparameters more effectively and reducing computational overhead. 
+
+During both hyperparameter tuning and training,I rescaled the time series data using Min-Max normalization. Min-Max normalization scales the data to a fixed range, typically [0, 1], which is particularly useful for time series since the values are often continuous and can vary across different magnitudes. 
+
 ### Model Training 
 
 __Why Use Early Stopping?__
