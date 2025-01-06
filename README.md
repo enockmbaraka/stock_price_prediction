@@ -221,7 +221,7 @@ To deploy the model, follow these steps:
 - Use the [test_all_companies.py](https://github.com/f-kuzey-edes-huyal/stock_price_prediction/blob/main/test_all_companies.py) script to make requests to the API. You can do this by running:
 
 ```python test_all_companies.py```
-
+![](https://github.com/f-kuzey-edes-huyal/stock_price_prediction/tree/main/results)
 ## Containerization using Docker
 When I tried to use the requirements.txt file that I prepared in my Windows environment in a Linux-based Docker environment, I encountered compatibility issues. To resolve this, I copied the packages listed in the <code> requirements.txt </code> file, which I had created using <code> pip freeze > requirements.txt </code>, and asked ChatGPT to generate a new requirements.txt file. I then used the updated requirements.txt file suggested by ChatGPT.
 
