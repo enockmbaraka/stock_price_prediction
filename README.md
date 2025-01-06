@@ -143,6 +143,16 @@ __Disadvantages:__
 
 ```python main_train_google.py```
 
+__Results Summary__
+
+| **Dataset** | **Mean Absolute Error (MAE)** | **Mean Absolute Percentage Error (MAPE)** | **Symmetric Mean Absolute Percentage Error (SMAPE)** |
+|-------------|--------------------------------|------------------------------------------|-----------------------------------------------------|
+| Google      | 0.0205                        | 2.7047                                   | 2.5505                                              |
+| Meta        | 0.0304                        | 4.4251                                   | 4.6505                                              |
+| Apple       | 0.1824                        | 20.1099                                  | 22.9494                                             |
+| Nvidia      | 0.0436                        | 5.0240                                   | 4.4939                                              |
+
+
 ## Containerization using Docker
 When I tried to use the requirements.txt file that I prepared in my Windows environment in a Linux-based Docker environment, I encountered compatibility issues. To resolve this, I copied the packages listed in the <code> requirements.txt </code> file, which I had created using <code> pip freeze > requirements.txt </code>, and asked ChatGPT to generate a new requirements.txt file. I then used the updated requirements.txt file suggested by ChatGPT.
 
