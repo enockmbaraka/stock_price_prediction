@@ -65,6 +65,9 @@ This dataset contains daily stock price information, which is useful for analyzi
 | **Adj Close**    | The closing price adjusted for corporate actions like stock splits, dividends, and rights offerings. |
 | **Volume**       | The total number of shares traded during the trading day. This reflects market activity and liquidity.|
 
+In my project, I chose to analyze the close value from the stock price prediction dataset because it is widely regarded as one of the most reliable indicators for stock market analysis. The close value represents the final price at which a stock is traded at the end of the trading session, making it a critical metric for evaluating a stock's performance over time.
+
+Unlike the open, low, or high values, which reflect specific moments or ranges during the trading day, the close value encapsulates the market's sentiment and activity for the entire trading session. It is often used by investors and analysts as a benchmark for decision-making, as it provides a clearer snapshot of how the stock performed on a given day.
 ## Training
 
 ### Models
