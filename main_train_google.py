@@ -397,21 +397,7 @@ plt.show()
 
 
 
-# In[18]:
 
-
-X_test_reshaped = X_test.reshape(X_test.shape[0], -1)
-print(*loaded_scaler.inverse_transform(X_test_reshaped))
-len(X_test_reshaped[0])
-
-
-# In[ ]:
-
-
-get_ipython().system('jupyter nbconvert --to script main_train_google.ipynb')
-
-
-# In[ ]:
 
 
 
