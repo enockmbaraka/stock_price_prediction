@@ -143,6 +143,11 @@ __Disadvantages:__
 
 ```python main_train_google.py```
 
+```python main_train_apple.py```
+
+```python main_train_nvidia.py```
+
+
 __Results Summary__
 
 | **Dataset** | **Mean Absolute Error (MAE)** | **Mean Absolute Percentage Error (MAPE)** | **Symmetric Mean Absolute Percentage Error (SMAPE)** |
