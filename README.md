@@ -138,6 +138,9 @@ __Disadvantages:__
 ### Hyperparameter Tuning
 
 ### Training 
+
+```venv\Scripts\activate``` 
+
 ## Containerization using Docker
 When I tried to use the requirements.txt file that I prepared in my Windows environment in a Linux-based Docker environment, I encountered compatibility issues. To resolve this, I copied the packages listed in the <code> requirements.txt </code> file, which I had created using <code> pip freeze > requirements.txt </code>, and asked ChatGPT to generate a new requirements.txt file. I then used the updated requirements.txt file suggested by ChatGPT.
 
