@@ -148,7 +148,7 @@ A patience value of 15 strikes a balance between ensuring the model has enough t
 __Training Configuration__
 The total number of training epochs was set to 50. However, due to early stopping, training often concluded before reaching the maximum epoch limit, saving computational resources and reducing the risk of overfitting.
 
-
+__How can the model be trained?__
 First, you have to activate virtual environment:
 
 ```venv\Scripts\activate``` 
