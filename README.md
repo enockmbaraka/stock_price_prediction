@@ -174,9 +174,14 @@ __Results Summary__
 | Nvidia      | 0.0436                        | 5.0240                                   | 4.4939                                              |
 
 ![](https://github.com/f-kuzey-edes-huyal/stock_price_prediction/blob/main/results/google_result.png)
-![](https://github.com/f-kuzey-edes-huyal/stock_price_prediction/blob/main/results/google_result.p)
+
+For Meta, the predicted prices show some correlation with the actual prices but tend to lag behind the true movements. This delay suggests that the model may not be adequately capturing rapid fluctuations in stock prices. Using an LSTM model, which performed slightly worse in this case, could potentially lead to better results with further optimization.
+
 
 ![](https://github.com/f-kuzey-edes-huyal/stock_price_prediction/blob/main/results/meta_result.png)
+
+For Apple, the predicted prices (dashed line) consistently underestimate the actual stock prices (solid line). This indicates a potential bias in the model, where it struggles to accurately capture higher price fluctuations.
+
 
 ![](https://github.com/f-kuzey-edes-huyal/stock_price_prediction/blob/main/results/apple_result.png)
 
