@@ -200,6 +200,26 @@ For Nvidia, the predicted prices closely follow the actual stock prices, which i
 
 FastAPI is faster than Flask because it is built on ASGI and uses asynchronous programming, allowing it to handle high-concurrency workloads more efficiently. Unlike Flask, FastAPI automatically generates interactive API documentation (e.g., Swagger UI), which saves time and simplifies collaboration. It also uses Python's type hints for automatic request validation, reducing the risk of errors, whereas Flask requires additional libraries or manual validation. While Flask is lightweight and flexible, FastAPI's modern design makes it better suited for building APIs that need to scale or handle real-time requests.
 
+I chose to use FastAPI instead of Flask, which is commonly used in the Zoomcamp, and created a sub-repository to demonstrate how to work with FastAPI. The deployment process is straightforward and begins with the main.py file, which serves as the FastAPI application.
+
+To deploy the model, follow these steps:
+
+
+- Activate your virtual environment.
+
+  ```venv\Scripts\activate```
+  
+- Run the following command in the terminal to start the FastAPI server:
+
+```uvicorn main:app --reload```
+- To test the deployed model: Open a new terminal and activate the virtual environment using
+  
+  ```venv\Scripts\activate```
+
+- Use the test_all_companies.py script to make requests to the API. You can do this by running:
+
+```python test_all_companies.py```
+
 ## Containerization using Docker
 When I tried to use the requirements.txt file that I prepared in my Windows environment in a Linux-based Docker environment, I encountered compatibility issues. To resolve this, I copied the packages listed in the <code> requirements.txt </code> file, which I had created using <code> pip freeze > requirements.txt </code>, and asked ChatGPT to generate a new requirements.txt file. I then used the updated requirements.txt file suggested by ChatGPT.
 
