@@ -225,7 +225,14 @@ To deploy the model, follow these steps:
 ## Containerization using Docker
 When I tried to use the requirements.txt file that I prepared in my Windows environment in a Linux-based Docker environment, I encountered compatibility issues. To resolve this, I copied the packages listed in the <code> requirements.txt </code> file, which I had created using <code> pip freeze > requirements.txt </code>, and asked ChatGPT to generate a new requirements.txt file. I then used the updated requirements.txt file suggested by ChatGPT.
 
+First, build the Docker image for the application.
+
+
 <code> docker build -t stockmarket . </code>
+
+Then, run the Docker container to deploy the model.
+
+To test your model: Activate the virtual environment in another terminal (```venv\Scripts\activate```): and test the model (```python test_all_companies.py```)
 
 <code> docker run -p 8000:8000 stockmarket </code>
 
