@@ -9,10 +9,11 @@ Stock Price Prediction
 4. [Usage](#usage)
 5. [Data](#data)
 6. [Model](#model)
-7. [Deployment](#deployment)
-8. [Containerization using Docker](#containerization)
-9. [License](#license)
-10. [Acknowledgements](#acknowledgements)
+7. [Training](#training)
+8. [Deployment](#deployment)
+9. [Containerization using Docker](#containerization)
+10. [License](#license)
+11. [Acknowledgements](#acknowledgements)
 
 
 ## Stock Market Price Estimation
