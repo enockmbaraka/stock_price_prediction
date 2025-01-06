@@ -138,7 +138,7 @@ __Disadvantages:__
 
 ### Hyperparameter Tuning
 
-### Training 
+### Model Training 
 
 __Why Use Early Stopping?__
 Early stopping is a regularization technique that helps prevent overfitting by halting the training process when the model's performance on the validation set stops improving. This ensures that the model generalizes well to unseen data rather than memorizing patterns from the training data.
