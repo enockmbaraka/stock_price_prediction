@@ -139,9 +139,15 @@ __Disadvantages:__
 
 ### Training 
 
+First, you have to activate virtual environment:
+
 ```venv\Scripts\activate``` 
 
+You can train the models running the codes provided below.
+
 ```python main_train_google.py```
+
+```python main_train_meta.py```
 
 ```python main_train_apple.py```
 
