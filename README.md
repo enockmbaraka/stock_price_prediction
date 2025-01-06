@@ -213,6 +213,8 @@ To deploy the model, follow these steps:
 
 ```uvicorn main:app --reload```
 - To test the deployed model: Open a new terminal and activate the virtual environment using
+
+  ![](https://github.com/f-kuzey-edes-huyal/stock_price_prediction/blob/main/results/fastapi_stock_price.png)
   
   ```venv\Scripts\activate```
 
