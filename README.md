@@ -185,6 +185,8 @@ For Apple, the predicted prices (dashed line) consistently underestimate the act
 
 ![](https://github.com/f-kuzey-edes-huyal/stock_price_prediction/blob/main/results/apple_result.png)
 
+For Nvidia, the predicted prices closely follow the actual stock prices, which is encouraging. However, there are instances where the model overshoots or undershoots.
+
 ![](https://github.com/f-kuzey-edes-huyal/stock_price_prediction/blob/main/results/nvidia_result.png)
 ## Containerization using Docker
 When I tried to use the requirements.txt file that I prepared in my Windows environment in a Linux-based Docker environment, I encountered compatibility issues. To resolve this, I copied the packages listed in the <code> requirements.txt </code> file, which I had created using <code> pip freeze > requirements.txt </code>, and asked ChatGPT to generate a new requirements.txt file. I then used the updated requirements.txt file suggested by ChatGPT.
