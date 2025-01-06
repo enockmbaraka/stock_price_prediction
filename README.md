@@ -200,7 +200,7 @@ For Nvidia, the predicted prices closely follow the actual stock prices, which i
 
 FastAPI is faster than Flask because it is built on ASGI and uses asynchronous programming, allowing it to handle high-concurrency workloads more efficiently. Unlike Flask, FastAPI automatically generates interactive API documentation (e.g., Swagger UI), which saves time and simplifies collaboration. It also uses Python's type hints for automatic request validation, reducing the risk of errors, whereas Flask requires additional libraries or manual validation. While Flask is lightweight and flexible, FastAPI's modern design makes it better suited for building APIs that need to scale or handle real-time requests.
 
-I chose to use FastAPI instead of Flask, which is commonly used in the Zoomcamp, and created a sub-repository to demonstrate how to work with FastAPI. The deployment process is straightforward and begins with the main.py file, which serves as the FastAPI application.
+I chose to use FastAPI instead of Flask, which is commonly used in the Zoomcamp, and created a sub-repository to demonstrate how to work with FastAPI. The deployment process is straightforward and begins with the [main.py](https://github.com/f-kuzey-edes-huyal/stock_price_prediction/blob/main/main.py) file, which serves as the FastAPI application.
 
 To deploy the model, follow these steps:
 
@@ -216,7 +216,7 @@ To deploy the model, follow these steps:
   
   ```venv\Scripts\activate```
 
-- Use the test_all_companies.py script to make requests to the API. You can do this by running:
+- Use the [test_all_companies.py](https://github.com/f-kuzey-edes-huyal/stock_price_prediction/blob/main/test_all_companies.py) script to make requests to the API. You can do this by running:
 
 ```python test_all_companies.py```
 
