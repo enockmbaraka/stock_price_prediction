@@ -241,13 +241,14 @@ To test your model: Activate the virtual environment in another terminal (```ven
 
 ![](https://github.com/f-kuzey-edes-huyal/stock_price_prediction/blob/main/results/docker_running_fastapi.png)
 
+Finally, push the Docker image to Docker Hub. This will allow anyone to download the image and test the model easily.
 <code> docker login </code>
 
 <code> docker tag stockmarket fkuzeyedeshuyal/stockmarket </code>
 
 <code> docker push fkuzeyedeshuyal/stockmarket </code>
 
-
+You can download the image using the command given below.
 <code> docker pull fkuzeyedeshuyal/stockmarket:latest </code>
 
 ## Deployment to Cloud
@@ -264,6 +265,7 @@ I deployed my model on AWS using the following steps:
 ![myimage-alt-tag2](https://github.com/f-kuzey-edes-huyal/stock_price_prediction/blob/main/results/final_inbound_rules.png)
 
 ![myimage-alt-tag1](https://github.com/f-kuzey-edes-huyal/stock_price_prediction/blob/main/results/final_instance_ip.png)
+
 - Click on the created instance, then click Connect, and finally, click the Connect button again. This will open a Linux terminal
 
  - Write the following commands 
