@@ -353,7 +353,7 @@ if __name__ == "__main__":
     print("Predictions (rescaled):", predictions_rescaled.astype('float32'))
 
     # Evaluate metrics on test data
-    metrics = loaded_model.evaluate(X_test, y_test, verbose=2)
+    metrics = loaded_model.evaluate(X_test, y_test , verbose=2)
     metric_names = loaded_model.metrics_names  # Get metric names for better interpretability
 
     # Display metrics
