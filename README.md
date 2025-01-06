@@ -163,6 +163,7 @@ __Results Summary__
 | Apple       | 0.1824                        | 20.1099                                  | 22.9494                                             |
 | Nvidia      | 0.0436                        | 5.0240                                   | 4.4939                                              |
 
+![}(https://github.com/f-kuzey-edes-huyal/stock_price_prediction/blob/main/results/google_result.png)
 ![](https://github.com/f-kuzey-edes-huyal/stock_price_prediction/blob/main/results/google_result.p)
 
 ![](https://github.com/f-kuzey-edes-huyal/stock_price_prediction/blob/main/results/meta_result.png)
