@@ -221,6 +221,8 @@ To deploy the model, follow these steps:
 - Use the [test_all_companies.py](https://github.com/f-kuzey-edes-huyal/stock_price_prediction/blob/main/test_all_companies.py) script to make requests to the API. You can do this by running:
 
 ```python test_all_companies.py```
+
+
 ![](https://github.com/f-kuzey-edes-huyal/stock_price_prediction/tree/main/results)
 
 ## Containerization using Docker
