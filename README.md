@@ -118,17 +118,32 @@ __2. Meta__
   <img src="https://github.com/f-kuzey-edes-huyal/stock_price_prediction/blob/main/eda/Meta_Seasonal.png" width="300" height="200" />
   <img src="https://github.com/f-kuzey-edes-huyal/stock_price_prediction/blob/main/eda/Meta_Residual.png" width="300" height="200" />
 </p>
+
 __Trend:__ The trend is upward and fairly strong, indicating a significant increase in values over time. This suggests positive momentum in the dataset.
 __Seasonality:__ Meta's seasonal component appears more volatile compared to Google, with frequent and irregular fluctuations. This suggests that the data has a more complex periodic structure.
 __Residual:__ The residuals show more variability and larger deviations compared to Google, meaning that the model may not fully capture all aspects of the time series.
 
 __3. Apple__
 
+<p float="left">
+  <img src="https://github.com/f-kuzey-edes-huyal/stock_price_prediction/blob/main/eda/Apple_Trend.png" width="300" height="200" />
+  <img src="https://github.com/f-kuzey-edes-huyal/stock_price_prediction/blob/main/eda/Apple_Seasonal.png" width="300" height="200" />
+  <img src="https://github.com/f-kuzey-edes-huyal/stock_price_prediction/blob/main/eda/Apple_Residual.png" width="300" height="200" />
+</p>
+
+
 __Trend:__ The trend is upward and consistent but slightly less steep than NVIDIA and Meta. It indicates steady growth over time.
 __Seasonality:__ Apple’s seasonal component shows relatively higher variability and irregular periodic patterns. This complexity in seasonality could make modeling more challenging.
 __Residual:__ The residuals exhibit higher noise, suggesting that the model struggles to explain the variation in the data. This aligns with the  observation that Apple's classification results are the worst.
 
 __4. NVIDIA__
+
+<p float="left">
+  <img src="https://github.com/f-kuzey-edes-huyal/stock_price_prediction/blob/main/eda/NVIDIA_Trend.png" width="300" height="200" />
+  <img src="https://github.com/f-kuzey-edes-huyal/stock_price_prediction/blob/main/eda/NVIDIA_Seasonal.png" width="300" height="200" />
+  <img src="https://github.com/f-kuzey-edes-huyal/stock_price_prediction/blob/main/eda/NVIDIA_Residual.png" width="300" height="200" />
+</p>
+
 
 __Trend:__ The trend for NVIDIA shows a strong and consistent upward movement, similar to Meta but with steeper growth. This indicates rapid changes or increases in the series.
 __Seasonality:__ NVIDIA's seasonal component is less volatile than Apple or Meta, showing periodic fluctuations that are smoother and more predictable.
