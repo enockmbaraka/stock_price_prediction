@@ -101,6 +101,12 @@ __Actionable Insights:__
 
 __1. Google__
 
+<p float="left">
+  <img src="https://github.com/f-kuzey-edes-huyal/stock_price_prediction/blob/main/eda/Google_Trend.png" width="300" height="200" />
+  <img src="https://github.com/f-kuzey-edes-huyal/stock_price_prediction/blob/main/eda/Google_Seasonal.png" width="300" height="200" />
+  <img src="https://github.com/f-kuzey-edes-huyal/stock_price_prediction/blob/main/eda/Google_Residual.png" width="300" height="200" />
+</p>
+
 __Trend:__ The trend is consistently increasing, reflecting a steady growth pattern in the time series over the given period. This could indicate positive long-term growth or increased activity.
 __Seasonality:__ The seasonal component exhibits moderate fluctuations, showing periodic patterns that are relatively consistent. This suggests some underlying cyclical behavior in the data.
 __Residual:__ The residuals are small and do not show significant spikes, indicating that the model captures the trend and seasonality well. The minimal noise may explain why I achieved the best score for Google.
