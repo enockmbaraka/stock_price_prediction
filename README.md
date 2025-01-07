@@ -152,6 +152,11 @@ __Residual:__ The residuals are relatively well-contained but exhibit some spike
 
 ### Removing Outliers 
 
+<p float="left">
+  <img src="https://github.com/f-kuzey-edes-huyal/stock_price_prediction/blob/main/eda/close_disrubition.png" width="500" height="400" />
+  <img src="https://github.com/f-kuzey-edes-huyal/stock_price_prediction/blob/main/eda/close_disrubition_outliers.png" width="500" height="400" />
+</p>
+
 I conducted an outlier analysis for the four companies (Google, Meta, Apple, and Nvidia) and identified and removed outliers from the dataset. After the cleaning process, I saved the updated datasets to the following files:
 
 - [google_stock_cleaned.csv](https://github.com/f-kuzey-edes-huyal/stock_price_prediction/blob/main/inputs/google_stock_cleaned.csv)
