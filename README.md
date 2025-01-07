@@ -73,6 +73,12 @@ Unlike the open, low, or high values, which reflect specific moments or ranges d
 
 ### Comparison of Moving Averages:
 
+<p float="left">
+  <img src="[path_to_image1.png](https://github.com/f-kuzey-edes-huyal/stock_price_prediction/blob/main/eda/Google_stock_price_MA.png)" width="300" />
+  <img src="[path_to_image2.png](https://github.com/f-kuzey-edes-huyal/stock_price_prediction/blob/main/eda/Meta_stock_price_MA.png)" width="300" />
+  <img src="[path_to_image3.png](https://github.com/f-kuzey-edes-huyal/stock_price_prediction/blob/main/eda/Apple_stock_price_MA.png)" width="300" />
+</p>
+
 - Google and NVIDIA show the strongest trends with consistent golden crosses, indicating robust upward momentum.
 Meta also demonstrates a clear upward trend but with slightly more volatility.
 
