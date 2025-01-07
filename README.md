@@ -1,19 +1,18 @@
-# stock_price_prediction
-Stock Price Prediction
 
 # Table of Contents
 
 1. [Stock Market Price Estimation](#stock-market-price-estimation)
 2. [Data Collection](#data-collection)
-3. [Installation](#installation)
-4. [Usage](#usage)
-5. [Data](#data)
-6. [Model](#model)
-7. [Training](#training)
-8. [Deployment](#deployment)
-9. [Containerization using Docker](#containerization)
+3. [Stock Price Dataset Description](#stock-orice-dataset-descriptopn)
+4. [EDA](#eda)
+5. [Training](#training)
+6. [Deployment with FastAPI](#deployment_with_fastapi)
+7. [Containerization using Docker](#containerization)
+8. [Deployment to Cloud](#deploymenttocloud)
+9. [Installation](#installation)
 10. [License](#license)
 11. [Acknowledgements](#acknowledgements)
+
 
 
 ## Stock Market Price Estimation
