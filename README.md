@@ -75,13 +75,13 @@ Unlike the open, low, or high values, which reflect specific moments or ranges d
 
 
 <p float="left">
-  <img src="https://github.com/f-kuzey-edes-huyal/stock_price_prediction/blob/main/eda/Google_stock_price_MA.png" width="700" height="400" />
-  <img src="https://github.com/f-kuzey-edes-huyal/stock_price_prediction/blob/main/eda/Meta_stock_price_MA.png" width="700" height="400" />
+  <img src="https://github.com/f-kuzey-edes-huyal/stock_price_prediction/blob/main/eda/Google_stock_price_MA.png" width="800" height="400" />
+  <img src="https://github.com/f-kuzey-edes-huyal/stock_price_prediction/blob/main/eda/Meta_stock_price_MA.png" width="800" height="400" />
 </p>
 
 <p float="left">
-  <img src="https://github.com/f-kuzey-edes-huyal/stock_price_prediction/blob/main/eda/Apple_stock_price_MA.png" width="700" height="400" />
-  <img src="https://github.com/f-kuzey-edes-huyal/stock_price_prediction/blob/main/eda/Nvidia_stock_price_MA.png" width="700" height="400" />
+  <img src="https://github.com/f-kuzey-edes-huyal/stock_price_prediction/blob/main/eda/Apple_stock_price_MA.png" width="800" height="400" />
+  <img src="https://github.com/f-kuzey-edes-huyal/stock_price_prediction/blob/main/eda/Nvidia_stock_price_MA.png" width="800" height="400" />
 </p>
 
 
@@ -101,9 +101,9 @@ __Actionable Insights:__
 __1. Google__
 
 <p float="left">
-  <img src="https://github.com/f-kuzey-edes-huyal/stock_price_prediction/blob/main/eda/Google_Trend.png" width="600" height="300" />
-  <img src="https://github.com/f-kuzey-edes-huyal/stock_price_prediction/blob/main/eda/Google_Seasonal.png" width="600" height="300" />
-  <img src="https://github.com/f-kuzey-edes-huyal/stock_price_prediction/blob/main/eda/Google_Residual.png" width="500" height="300" />
+  <img src="https://github.com/f-kuzey-edes-huyal/stock_price_prediction/blob/main/eda/Google_Trend.png" width="800" height="400" />
+  <img src="https://github.com/f-kuzey-edes-huyal/stock_price_prediction/blob/main/eda/Google_Seasonal.png" width="800" height="400" />
+  <img src="https://github.com/f-kuzey-edes-huyal/stock_price_prediction/blob/main/eda/Google_Residual.png" width="800" height="400" />
 </p>
 
 __Trend:__ The trend is consistently increasing, reflecting a steady growth pattern in the time series over the given period. This could indicate positive long-term growth or increased activity.
@@ -113,9 +113,9 @@ __Residual:__ The residuals are small and do not show significant spikes, indica
 __2. Meta__
 
 <p float="left">
-  <img src="https://github.com/f-kuzey-edes-huyal/stock_price_prediction/blob/main/eda/Meta_Trend.png" width="600" height="300" />
-  <img src="https://github.com/f-kuzey-edes-huyal/stock_price_prediction/blob/main/eda/Meta_Seasonal.png" width="600" height="300" />
-  <img src="https://github.com/f-kuzey-edes-huyal/stock_price_prediction/blob/main/eda/Meta_Residual.png" width="600" height="300" />
+  <img src="https://github.com/f-kuzey-edes-huyal/stock_price_prediction/blob/main/eda/Meta_Trend.png" width="800" height="400" />
+  <img src="https://github.com/f-kuzey-edes-huyal/stock_price_prediction/blob/main/eda/Meta_Seasonal.png" width="800" height="400" />
+  <img src="https://github.com/f-kuzey-edes-huyal/stock_price_prediction/blob/main/eda/Meta_Residual.png" width="800" height="400" />
 </p>
 
 __Trend:__ The trend is upward and fairly strong, indicating a significant increase in values over time. This suggests positive momentum in the dataset.
@@ -125,9 +125,9 @@ __Residual:__ The residuals show more variability and larger deviations compared
 __3. Apple__
 
 <p float="left">
-  <img src="https://github.com/f-kuzey-edes-huyal/stock_price_prediction/blob/main/eda/Apple_Trend.png" width="600" height="300" />
-  <img src="https://github.com/f-kuzey-edes-huyal/stock_price_prediction/blob/main/eda/Apple_Seasonal.png" width="600" height="300" />
-  <img src="https://github.com/f-kuzey-edes-huyal/stock_price_prediction/blob/main/eda/Apple_Residual.png" width="600" height="300" />
+  <img src="https://github.com/f-kuzey-edes-huyal/stock_price_prediction/blob/main/eda/Apple_Trend.png" width="800" height="400" />
+  <img src="https://github.com/f-kuzey-edes-huyal/stock_price_prediction/blob/main/eda/Apple_Seasonal.png" width="800" height="400" />
+  <img src="https://github.com/f-kuzey-edes-huyal/stock_price_prediction/blob/main/eda/Apple_Residual.png" width="800" height="400" />
 </p>
 
 
@@ -138,9 +138,9 @@ __Residual:__ The residuals exhibit higher noise, suggesting that the model stru
 __4. NVIDIA__
 
 <p float="left">
-  <img src="https://github.com/f-kuzey-edes-huyal/stock_price_prediction/blob/main/eda/NVIDIA_Trend.png" width="600" height="300" />
-  <img src="https://github.com/f-kuzey-edes-huyal/stock_price_prediction/blob/main/eda/NVIDIA_Seasonal.png" width="600" height="300" />
-  <img src="https://github.com/f-kuzey-edes-huyal/stock_price_prediction/blob/main/eda/NVIDIA_Residual.png" width="600" height="300" />
+  <img src="https://github.com/f-kuzey-edes-huyal/stock_price_prediction/blob/main/eda/NVIDIA_Trend.png" width="800" height="400" />
+  <img src="https://github.com/f-kuzey-edes-huyal/stock_price_prediction/blob/main/eda/NVIDIA_Seasonal.png" width="800" height="400" />
+  <img src="https://github.com/f-kuzey-edes-huyal/stock_price_prediction/blob/main/eda/NVIDIA_Residual.png" width="800" height="400" />
 </p>
 
 
@@ -152,8 +152,8 @@ __Residual:__ The residuals are relatively well-contained but exhibit some spike
 ### Removing Outliers 
 
 <p float="left">
-  <img src="https://github.com/f-kuzey-edes-huyal/stock_price_prediction/blob/main/eda/close_disrubition.png" width="500" height="400" />
-  <img src="https://github.com/f-kuzey-edes-huyal/stock_price_prediction/blob/main/eda/close_disrubition_outliers.png" width="500" height="400" />
+  <img src="https://github.com/f-kuzey-edes-huyal/stock_price_prediction/blob/main/eda/close_disrubition.png" width="800" height="400" />
+  <img src="https://github.com/f-kuzey-edes-huyal/stock_price_prediction/blob/main/eda/close_disrubition_outliers.png" width="800" height="400" />
 </p>
 
 I conducted an outlier analysis for the four companies (Google, Meta, Apple, and Nvidia) and identified and removed outliers from the dataset. After the cleaning process, I saved the updated datasets to the following files:
