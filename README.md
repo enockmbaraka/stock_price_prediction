@@ -246,6 +246,7 @@ To test your model: Activate the virtual environment in another terminal (```ven
 ![](https://github.com/f-kuzey-edes-huyal/stock_price_prediction/blob/main/results/docker_running_fastapi.png)
 
 Finally, push the Docker image to Docker Hub. This will allow anyone to download the image and test the model easily.
+
 <code> docker login </code>
 
 <code> docker tag stockmarket fkuzeyedeshuyal/stockmarket </code>
@@ -253,6 +254,7 @@ Finally, push the Docker image to Docker Hub. This will allow anyone to download
 <code> docker push fkuzeyedeshuyal/stockmarket </code>
 
 You can download the image using the command given below.
+
 <code> docker pull fkuzeyedeshuyal/stockmarket:latest </code>
 
 ## Deployment to Cloud
@@ -273,15 +275,15 @@ I deployed my model on AWS using the following steps:
 - Click on the created instance, then click Connect, and finally, click the Connect button again. This will open a Linux terminal
 
  - Write the following commands 
-```sudo yum update -y```
+   ```sudo yum update -y```
 
-```sudo yum install -y docker```
+   ```sudo yum install -y docker```
 
-```sudo service docker start```
+   ```sudo service docker start```
 
-```sudo usermod -a -G docker ec2-user```
+   ```sudo usermod -a -G docker ec2-user```
 
-```docker ps```
+   ```docker ps```
 
 
 
