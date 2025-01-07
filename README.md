@@ -115,13 +115,13 @@ __Residual:__ The residuals are relatively well-contained but exhibit some spike
 
 I conducted an outlier analysis for the four companies (Google, Meta, Apple, and Nvidia) and identified and removed outliers from the dataset. After the cleaning process, I saved the updated datasets to the following files:
 
-[google_stock_cleaned.csv](https://github.com/f-kuzey-edes-huyal/stock_price_prediction/blob/main/inputs/google_stock_cleaned.csv)
+- [google_stock_cleaned.csv](https://github.com/f-kuzey-edes-huyal/stock_price_prediction/blob/main/inputs/google_stock_cleaned.csv)
 
-[meta_stock_cleaned.csv](https://github.com/f-kuzey-edes-huyal/stock_price_prediction/blob/main/inputs/meta_stock_cleaned.csv)
+- [meta_stock_cleaned.csv](https://github.com/f-kuzey-edes-huyal/stock_price_prediction/blob/main/inputs/meta_stock_cleaned.csv)
 
-[apple_stock_cleaned.csv](https://github.com/f-kuzey-edes-huyal/stock_price_prediction/blob/main/inputs/apple_stock_cleaned.csv)
+- [apple_stock_cleaned.csv](https://github.com/f-kuzey-edes-huyal/stock_price_prediction/blob/main/inputs/apple_stock_cleaned.csv)
 
-[nvidia_stock_cleaned.csv](https://github.com/f-kuzey-edes-huyal/stock_price_prediction/blob/main/inputs/nvidia_stock_cleaned.csv)
+- [nvidia_stock_cleaned.csv](https://github.com/f-kuzey-edes-huyal/stock_price_prediction/blob/main/inputs/nvidia_stock_cleaned.csv)
 
 For the remainder of the project, I used this cleaned data for all subsequent experiments and analyses to ensure improved data quality and reliable results.
 
