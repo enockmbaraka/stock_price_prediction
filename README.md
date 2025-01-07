@@ -274,7 +274,8 @@ I deployed my model on AWS using the following steps:
 
 - Click on the created instance, then click Connect, and finally, click the Connect button again. This will open a Linux terminal
 
- - Write the following commands 
+ - Write the following commands
+   
    ```sudo yum update -y```
 
    ```sudo yum install -y docker```
