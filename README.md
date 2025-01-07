@@ -262,6 +262,11 @@ __Disadvantages:__
 
 ### Metrics
 
+- __Mean Absolute Error (MAE):__ MAE is the average of the absolute differences between predicted and actual values in a dataset. It measures the magnitude of the error in prediction, without considering whether the prediction is over or under the actual value. MAE is important in time series analysis because it gives a clear and simple understanding of the average magnitude of error across all data points.
+  
+- __Mean Absolute Percentage Error (MAPE):__ MAPE expresses the error as a percentage of the actual values. It shows how large the prediction error is relative to the actual value, giving a more intuitive sense of the model’s accuracy in percentage terms. MAPE is commonly used in time series forecasting because it normalizes the error by dividing by the actual values, which helps to understand the relative size of the error, especially when comparing models across datasets with different magnitudes. However, MAPE can be problematic when actual values are zero or very close to zero, as this causes large percentage errors.
+- __Symmetric Mean Absolute Percentage Error (sMAPE):__  sMAPE is a variation of MAPE that normalizes the error symmetrically by using both predicted and actual values in the denominator. It aims to avoid some issues with MAPE, especially when actual values are near zero. sMAPE is useful when comparing models across different time series datasets with varying scales, as it treats under- and over-forecasting equally. It helps mitigate issues caused by small actual values in MAPE and gives a more balanced error metric.
+
 ### [Hyperparameter Tuning](https://github.com/f-kuzey-edes-huyal/stock_price_prediction/tree/main/parameter_tuning)
 
 I performed hyperparameter tuning separately for [Google](https://github.com/f-kuzey-edes-huyal/stock_price_prediction/blob/main/parameter_tuning/hyperparameter_tuning_google_last.ipynb), [Meta](https://github.com/f-kuzey-edes-huyal/stock_price_prediction/blob/main/parameter_tuning/hyperparameter_tuning_meta_last.ipynb), [Apple](https://github.com/f-kuzey-edes-huyal/stock_price_prediction/blob/main/parameter_tuning/hyperparameter_tuning_apple_last.ipynb), and [NVIDIA](https://github.com/f-kuzey-edes-huyal/stock_price_prediction/blob/main/parameter_tuning/hyperparameter_tuning_nvidia_last.ipynb) using Optuna, an efficient hyperparameter optimization framework. Optuna was chosen for its ability to perform automated and flexible optimization through Bayesian search strategies. Unlike grid or random search, Optuna dynamically adjusts its search based on previous results, helping to find optimal hyperparameters more effectively and reducing computational overhead. 
@@ -297,7 +302,7 @@ You can train the models running the codes provided below.
 
 __Results Summary__
 
-| **Dataset** | **Mean Absolute Error (MAE)** | **Mean Absolute Percentage Error (MAPE)** | **Symmetric Mean Absolute Percentage Error (SMAPE)** |
+| **Dataset** | **Mean Absolute Error (MAE)** | **Mean Absolute Percentage Error (MAPE)** | **Symmetric Mean Absolute Percentage Error (sMAPE)** |
 |-------------|--------------------------------|------------------------------------------|-----------------------------------------------------|
 | Google      | 0.0205                        | 2.7047                                   | 2.5505                                              |
 | Meta        | 0.0304                        | 4.4251                                   | 4.6505                                              |
