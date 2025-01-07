@@ -69,7 +69,7 @@ In my project, I chose to analyze the __Close__ value from the stock price predi
 
 Unlike the open, low, or high values, which reflect specific moments or ranges during the trading day, the close value encapsulates the market's sentiment and activity for the entire trading session. It is often used by investors and analysts as a benchmark for decision-making, as it provides a clearer snapshot of how the stock performed on a given day.
 
-## EDA
+## [EDA](https://github.com/f-kuzey-edes-huyal/stock_price_prediction/tree/main/eda)
 
 ### Comparison of Moving Averages:
 
