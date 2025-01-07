@@ -3,7 +3,7 @@
 
 1. [Stock Market Price Estimation](#stock-market-price-estimation)
 2. [Data Collection](#data-collection)
-3. [Stock Price Dataset Description](#stock-orice-dataset-descriptopn)
+3. [Stock Price Dataset Description](#stock-price-dataset-descriptopn)
 4. [EDA](#eda)
 5. [Training](#training)
 6. [Deployment with FastAPI](#deployment_with_fastapi)
