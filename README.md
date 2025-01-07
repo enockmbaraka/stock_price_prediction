@@ -2,16 +2,23 @@
 # Table of Contents
 
 1. [Stock Market Price Estimation](#stock-market-price-estimation)
-2. [Data Collection](#data-collection)
-3. [Stock Price Dataset Description](#stock-price-dataset-description)
-4. [EDA](#eda)
-5. [Training](#training)
-6. [Deployment with FastAPI](#deployment-with-fastapi)
-7. [Containerization using Docker](#containerization-using-docker)
-8. [Deployment to Cloud](#deployment-to-cloud)
-9. [Installation](#installation)
-10. [License](#license)
-11. [Acknowledgements](#acknowledgements)
+  - Comparison of Moving Averages
+  - Time Series Analysis Comments for Google, Meta, Apple, and NVIDIA
+  - Removing Outliers
+3. [Data Collection](#data-collection)
+4. [Stock Price Dataset Description](#stock-price-dataset-description)
+5. [EDA](#eda)
+6. [Training](#training)
+  - Models
+  - Metrics
+  - Hyperparameter Tuning
+  - Model Training
+7. [Deployment with FastAPI](#deployment-with-fastapi)
+8. [Containerization using Docker](#containerization-using-docker)
+9. [Deployment to Cloud](#deployment-to-cloud)
+10. [Installation](#installation)
+11. [License](#license)
+12. [Acknowledgements](#acknowledgements)
 
 
 
@@ -240,6 +247,8 @@ __Disadvantages:__
 
 - Computationally intensive to solve, especially for stiff ODEs.
 - Requires domain knowledge for meaningful parameterization.
+
+### Metrics
 
 ### [Hyperparameter Tuning](https://github.com/f-kuzey-edes-huyal/stock_price_prediction/tree/main/parameter_tuning)
 
