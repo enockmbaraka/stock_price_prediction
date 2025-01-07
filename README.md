@@ -8,7 +8,7 @@
 5. [Training](#training)
 6. [Deployment with FastAPI](#deployment-with-fastapi)
 7. [Containerization using Docker](#containerization-using-docker)
-8. [Deployment to Cloud](#deploymenttocloud)
+8. [Deployment to Cloud](#deployment-to-cloud)
 9. [Installation](#installation)
 10. [License](#license)
 11. [Acknowledgements](#acknowledgements)
