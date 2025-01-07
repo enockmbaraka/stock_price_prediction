@@ -69,6 +69,34 @@ In my project, I chose to analyze the __Close__ value from the stock price predi
 
 Unlike the open, low, or high values, which reflect specific moments or ranges during the trading day, the close value encapsulates the market's sentiment and activity for the entire trading session. It is often used by investors and analysts as a benchmark for decision-making, as it provides a clearer snapshot of how the stock performed on a given day.
 
+## EDA
+
+### Time Series Analysis Comments for Google, Meta, Apple, and NVIDIA
+
+__1. Google__
+
+__Trend:__ The trend is consistently increasing, reflecting a steady growth pattern in the time series over the given period. This could indicate positive long-term growth or increased activity.
+__Seasonality:__ The seasonal component exhibits moderate fluctuations, showing periodic patterns that are relatively consistent. This suggests some underlying cyclical behavior in the data.
+__Residual:__ The residuals are small and do not show significant spikes, indicating that the model captures the trend and seasonality well. The minimal noise may explain why I achieved the best score for Google.
+
+__2. Meta__
+
+__Trend:__ The trend is upward and fairly strong, indicating a significant increase in values over time. This suggests positive momentum in the dataset.
+__Seasonality:__ Meta's seasonal component appears more volatile compared to Google, with frequent and irregular fluctuations. This suggests that the data has a more complex periodic structure.
+__Residual:__ The residuals show more variability and larger deviations compared to Google, meaning that the model may not fully capture all aspects of the time series.
+
+__3. Apple__
+
+__Trend:__ The trend is upward and consistent but slightly less steep than NVIDIA and Meta. It indicates steady growth over time.
+__Seasonality:__ Apple’s seasonal component shows relatively higher variability and irregular periodic patterns. This complexity in seasonality could make modeling more challenging.
+__Residual:__ The residuals exhibit higher noise, suggesting that the model struggles to explain the variation in the data. This aligns with the  observation that Apple's classification results are the worst.
+
+__4. NVIDIA__
+
+__Trend:__ The trend for NVIDIA shows a strong and consistent upward movement, similar to Meta but with steeper growth. This indicates rapid changes or increases in the series.
+__Seasonality:__ NVIDIA's seasonal component is less volatile than Apple or Meta, showing periodic fluctuations that are smoother and more predictable.
+__Residual:__ The residuals are relatively well-contained but exhibit some spikes, indicating occasional deviations from the model’s predictions.
+
 ## Training
 
 ### Models
