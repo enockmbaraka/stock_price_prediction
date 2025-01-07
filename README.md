@@ -65,6 +65,66 @@ This dataset contains daily stock price information, which is useful for analyzi
 | **Adj Close**    | The closing price adjusted for corporate actions like stock splits, dividends, and rights offerings. |
 | **Volume**       | The total number of shares traded during the trading day. This reflects market activity and liquidity.|
 
+In my project, I chose to analyze the __Close__ value from the stock price prediction dataset because it is widely regarded as one of the most reliable indicators for stock market analysis. The close value represents the final price at which a stock is traded at the end of the trading session, making it a critical metric for evaluating a stock's performance over time.
+
+Unlike the open, low, or high values, which reflect specific moments or ranges during the trading day, the close value encapsulates the market's sentiment and activity for the entire trading session. It is often used by investors and analysts as a benchmark for decision-making, as it provides a clearer snapshot of how the stock performed on a given day.
+
+## [EDA](https://github.com/f-kuzey-edes-huyal/stock_price_prediction/tree/main/eda)
+
+### Comparison of Moving Averages:
+
+- Google and NVIDIA show the strongest trends with consistent golden crosses, indicating robust upward momentum.
+Meta also demonstrates a clear upward trend but with slightly more volatility.
+
+- Apple exhibits more fluctuations in short-term trends, with the 20-day MA crossing below the 50-day MA occasionally, reflecting periods of weaker performance.
+
+__Actionable Insights:__
+
+- Google and NVIDIA are in strong bullish phases, suggesting potential opportunities for growth-focused investments.
+- Meta shows recovery signs, making it an interesting candidate for medium-term strategies.
+- Apple’s performance might require closer monitoring of short-term fluctuations to better time buy or sell decisions.
+
+### Time Series Analysis Comments for Google, Meta, Apple, and NVIDIA
+
+__1. Google__
+
+__Trend:__ The trend is consistently increasing, reflecting a steady growth pattern in the time series over the given period. This could indicate positive long-term growth or increased activity.
+__Seasonality:__ The seasonal component exhibits moderate fluctuations, showing periodic patterns that are relatively consistent. This suggests some underlying cyclical behavior in the data.
+__Residual:__ The residuals are small and do not show significant spikes, indicating that the model captures the trend and seasonality well. The minimal noise may explain why I achieved the best score for Google.
+
+__2. Meta__
+
+__Trend:__ The trend is upward and fairly strong, indicating a significant increase in values over time. This suggests positive momentum in the dataset.
+__Seasonality:__ Meta's seasonal component appears more volatile compared to Google, with frequent and irregular fluctuations. This suggests that the data has a more complex periodic structure.
+__Residual:__ The residuals show more variability and larger deviations compared to Google, meaning that the model may not fully capture all aspects of the time series.
+
+__3. Apple__
+
+__Trend:__ The trend is upward and consistent but slightly less steep than NVIDIA and Meta. It indicates steady growth over time.
+__Seasonality:__ Apple’s seasonal component shows relatively higher variability and irregular periodic patterns. This complexity in seasonality could make modeling more challenging.
+__Residual:__ The residuals exhibit higher noise, suggesting that the model struggles to explain the variation in the data. This aligns with the  observation that Apple's classification results are the worst.
+
+__4. NVIDIA__
+
+__Trend:__ The trend for NVIDIA shows a strong and consistent upward movement, similar to Meta but with steeper growth. This indicates rapid changes or increases in the series.
+__Seasonality:__ NVIDIA's seasonal component is less volatile than Apple or Meta, showing periodic fluctuations that are smoother and more predictable.
+__Residual:__ The residuals are relatively well-contained but exhibit some spikes, indicating occasional deviations from the model’s predictions.
+
+
+### Removing Outliers 
+
+I conducted an outlier analysis for the four companies (Google, Meta, Apple, and Nvidia) and identified and removed outliers from the dataset. After the cleaning process, I saved the updated datasets to the following files:
+
+- [google_stock_cleaned.csv](https://github.com/f-kuzey-edes-huyal/stock_price_prediction/blob/main/inputs/google_stock_cleaned.csv)
+
+- [meta_stock_cleaned.csv](https://github.com/f-kuzey-edes-huyal/stock_price_prediction/blob/main/inputs/meta_stock_cleaned.csv)
+
+- [apple_stock_cleaned.csv](https://github.com/f-kuzey-edes-huyal/stock_price_prediction/blob/main/inputs/apple_stock_cleaned.csv)
+
+- [nvidia_stock_cleaned.csv](https://github.com/f-kuzey-edes-huyal/stock_price_prediction/blob/main/inputs/nvidia_stock_cleaned.csv)
+
+For the remainder of the project, I used this cleaned data for all subsequent experiments and analyses to ensure improved data quality and reliable results.
+
 ## Training
 
 ### Models
@@ -138,7 +198,7 @@ __Disadvantages:__
 - Computationally intensive to solve, especially for stiff ODEs.
 - Requires domain knowledge for meaningful parameterization.
 
-### Hyperparameter Tuning
+### [Hyperparameter Tuning](https://github.com/f-kuzey-edes-huyal/stock_price_prediction/tree/main/parameter_tuning)
 
 I performed hyperparameter tuning separately for [Google](https://github.com/f-kuzey-edes-huyal/stock_price_prediction/blob/main/parameter_tuning/hyperparameter_tuning_google_last.ipynb), [Meta](https://github.com/f-kuzey-edes-huyal/stock_price_prediction/blob/main/parameter_tuning/hyperparameter_tuning_meta_last.ipynb), [Apple](https://github.com/f-kuzey-edes-huyal/stock_price_prediction/blob/main/parameter_tuning/hyperparameter_tuning_apple_last.ipynb), and [NVIDIA](https://github.com/f-kuzey-edes-huyal/stock_price_prediction/blob/main/parameter_tuning/hyperparameter_tuning_nvidia_last.ipynb) using Optuna, an efficient hyperparameter optimization framework. Optuna was chosen for its ability to perform automated and flexible optimization through Bayesian search strategies. Unlike grid or random search, Optuna dynamically adjusts its search based on previous results, helping to find optimal hyperparameters more effectively and reducing computational overhead. 
 
@@ -200,7 +260,7 @@ For Nvidia, the predicted prices closely follow the actual stock prices, which i
 
 FastAPI is faster than Flask because it is built on ASGI and uses asynchronous programming, allowing it to handle high-concurrency workloads more efficiently. Unlike Flask, FastAPI automatically generates interactive API documentation (e.g., Swagger UI), which saves time and simplifies collaboration. It also uses Python's type hints for automatic request validation, reducing the risk of errors, whereas Flask requires additional libraries or manual validation. While Flask is lightweight and flexible, FastAPI's modern design makes it better suited for building APIs that need to scale or handle real-time requests.
 
-I chose to use FastAPI instead of Flask, which is commonly used in the Zoomcamp, and created a sub-repository to demonstrate how to work with FastAPI. The deployment process is straightforward and begins with the [main.py](https://github.com/f-kuzey-edes-huyal/stock_price_prediction/blob/main/main.py) file, which serves as the FastAPI application.
+I chose to use FastAPI instead of Flask, which is commonly used in the Zoomcamp, and created a [sub-repository](https://github.com/f-kuzey-edes-huyal/fastapi-project) to demonstrate how to work with FastAPI. The deployment process is straightforward and begins with the [main.py](https://github.com/f-kuzey-edes-huyal/stock_price_prediction/blob/main/main.py) file, which serves as the FastAPI application.
 
 To deploy the model, follow these steps:
 
@@ -222,6 +282,9 @@ To deploy the model, follow these steps:
 
 ```python test_all_companies.py```
 
+
+![](https://github.com/f-kuzey-edes-huyal/stock_price_prediction/blob/main/results/testing_fastapi_all.png)
+
 ## Containerization using Docker
 When I tried to use the requirements.txt file that I prepared in my Windows environment in a Linux-based Docker environment, I encountered compatibility issues. To resolve this, I copied the packages listed in the <code> requirements.txt </code> file, which I had created using <code> pip freeze > requirements.txt </code>, and asked ChatGPT to generate a new requirements.txt file. I then used the updated requirements.txt file suggested by ChatGPT.
 
@@ -238,12 +301,15 @@ To test your model: Activate the virtual environment in another terminal (```ven
 
 ![](https://github.com/f-kuzey-edes-huyal/stock_price_prediction/blob/main/results/docker_running_fastapi.png)
 
+Finally, push the Docker image to Docker Hub. This will allow anyone to download the image and test the model easily.
+
 <code> docker login </code>
 
 <code> docker tag stockmarket fkuzeyedeshuyal/stockmarket </code>
 
 <code> docker push fkuzeyedeshuyal/stockmarket </code>
 
+You can download the image using the command given below.
 
 <code> docker pull fkuzeyedeshuyal/stockmarket:latest </code>
 
@@ -261,18 +327,20 @@ I deployed my model on AWS using the following steps:
 ![myimage-alt-tag2](https://github.com/f-kuzey-edes-huyal/stock_price_prediction/blob/main/results/final_inbound_rules.png)
 
 ![myimage-alt-tag1](https://github.com/f-kuzey-edes-huyal/stock_price_prediction/blob/main/results/final_instance_ip.png)
+
 - Click on the created instance, then click Connect, and finally, click the Connect button again. This will open a Linux terminal
 
- - Write the following commands 
-```sudo yum update -y```
+ - Write the following commands
+   
+   ```sudo yum update -y```
 
-```sudo yum install -y docker```
+   ```sudo yum install -y docker```
 
-```sudo service docker start```
+   ```sudo service docker start```
 
-```sudo usermod -a -G docker ec2-user```
+   ```sudo usermod -a -G docker ec2-user```
 
-```docker ps```
+   ```docker ps```
 
 
 
