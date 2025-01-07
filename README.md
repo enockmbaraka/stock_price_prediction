@@ -6,7 +6,7 @@
 3. [Stock Price Dataset Description](#stock-price-dataset-description)
 4. [EDA](#eda)
 5. [Training](#training)
-6. [Deployment with FastAPI](#deployment_with_fastapi)
+6. [Deployment with FastAPI](#deployment-with-fastapi)
 7. [Containerization using Docker](#containerization)
 8. [Deployment to Cloud](#deploymenttocloud)
 9. [Installation](#installation)
