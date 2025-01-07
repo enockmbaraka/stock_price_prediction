@@ -76,8 +76,8 @@ Unlike the open, low, or high values, which reflect specific moments or ranges d
 
 
 <p float="left">
-  <img src="https://github.com/f-kuzey-edes-huyal/stock_price_prediction/blob/main/eda/Google_stock_price_MA.png" width="500" />
-  <img src="https://github.com/f-kuzey-edes-huyal/stock_price_prediction/blob/main/eda/Meta_stock_price_MA.png" width="500" />
+  <img src="https://github.com/f-kuzey-edes-huyal/stock_price_prediction/blob/main/eda/Google_stock_price_MA.png" width="500" height="500" />
+  <img src="https://github.com/f-kuzey-edes-huyal/stock_price_prediction/blob/main/eda/Meta_stock_price_MA.png" width="500" height="500" />
 </p>
 
 - Google and NVIDIA show the strongest trends with consistent golden crosses, indicating robust upward momentum.
