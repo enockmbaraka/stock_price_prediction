@@ -1,24 +1,36 @@
 
+
+
 # Table of Contents
 
 1. [Stock Market Price Estimation](#stock-market-price-estimation)
-  - Comparison of Moving Averages
-  - Time Series Analysis Comments for Google, Meta, Apple, and NVIDIA
-  - Removing Outliers
-3. [Data Collection](#data-collection)
-4. [Stock Price Dataset Description](#stock-price-dataset-description)
-5. [EDA](#eda)
-6. [Training](#training)
-  - Models
-  - Metrics
-  - Hyperparameter Tuning
-  - Model Training
-7. [Deployment with FastAPI](#deployment-with-fastapi)
-8. [Containerization using Docker](#containerization-using-docker)
-9. [Deployment to Cloud](#deployment-to-cloud)
-10. [Installation](#installation)
-11. [License](#license)
-12. [Acknowledgements](#acknowledgements)
+   - [Comparison of Moving Averages](#comparison-of-moving-averages)
+   - [Time Series Analysis Comments for Google, Meta, Apple, and NVIDIA](#time-series-analysis-comments-for-google-meta-apple-and-nvidia)
+   - [Removing Outliers](#removing-outliers)
+
+2. [Data Collection](#data-collection)
+
+3. [Stock Price Dataset Description](#stock-price-dataset-description)
+
+4. [EDA (Exploratory Data Analysis)](#eda-exploratory-data-analysis)
+
+5. [Training](#training)
+   - [Models](#models)
+   - [Metrics](#metrics)
+   - [Hyperparameter Tuning](#hyperparameter-tuning)
+   - [Model Training](#model-training)
+
+6. [Deployment with FastAPI](#deployment-with-fastapi)
+
+7. [Containerization using Docker](#containerization-using-docker)
+
+8. [Deployment to Cloud](#deployment-to-cloud)
+
+9. [Installation](#installation)
+
+10. [License](#license)
+
+11. [Acknowledgements](#acknowledgements)
 
 
 
