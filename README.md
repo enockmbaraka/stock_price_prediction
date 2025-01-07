@@ -71,6 +71,19 @@ Unlike the open, low, or high values, which reflect specific moments or ranges d
 
 ## EDA
 
+### Comparison of Moving Averages:
+
+- Google and NVIDIA show the strongest trends with consistent golden crosses, indicating robust upward momentum.
+Meta also demonstrates a clear upward trend but with slightly more volatility.
+
+- Apple exhibits more fluctuations in short-term trends, with the 20-day MA crossing below the 50-day MA occasionally, reflecting periods of weaker performance.
+
+__Actionable Insights:__
+
+- Google and NVIDIA are in strong bullish phases, suggesting potential opportunities for growth-focused investments.
+- Meta shows recovery signs, making it an interesting candidate for medium-term strategies.
+- Apple’s performance might require closer monitoring of short-term fluctuations to better time buy or sell decisions.
+
 ### Time Series Analysis Comments for Google, Meta, Apple, and NVIDIA
 
 __1. Google__
