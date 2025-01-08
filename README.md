@@ -331,7 +331,7 @@ To improve Apple’s performance, we may achieve better results by using a small
 
 .
 
-Initially, I was uncertain whether to tune ```the time_step``` parameter or apply different normalization techniques for each time series. However, I decided to fix certain conditions to ensure a fair and consistent comparison across the four companies. 
+Initially, I was uncertain whether to tune the ```time_step``` parameter or apply different normalization techniques for each time series. However, I decided to fix certain conditions to ensure a fair and consistent comparison across the four companies. 
 
 ## Deployment with FastAPI
 
@@ -439,7 +439,7 @@ This error was resolved after properly configuring the inbound rules for my EC2 
 ![myimage-alt-tag4](https://github.com/f-kuzey-edes-huyal/stock_price_prediction/blob/main/results/final_aws_test.png)
 
 
-
+## Acknowledgements
 
 ## Installation
 
