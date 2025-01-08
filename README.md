@@ -443,6 +443,8 @@ This error was resolved after properly configuring the inbound rules for my EC2 
 
 I want to express my thanks to Ajith Punnakula for the invaluable discussions we had throughout this project and during the Machine Learning Zoomcamp. His insights on coding practices, repository organization, and cloud deployment were incredibly enlightening.
 
+And lastly, even though it is not directly related to this project, I want to thank the reviewers of my midterm project for helping me write more structured code and for their encouraging comments.
+
 ## Installation
 
 ```git clone https://github.com/f-kuzey-edes-huyal/stock_price_prediction.git```
