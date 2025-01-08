@@ -443,8 +443,10 @@ This error was resolved after properly configuring the inbound rules for my EC2 
 
 ```git clone https://github.com/f-kuzey-edes-huyal/stock_price_prediction.git```
 
-__To-Do List:__
-
-- Find a way to efficiently dockerize the TensorFlow model.
-- Evaluate the Docker image.
-- Get a smaller image and try AWS deployment before meeting with AJ!
+ - First, make sure you have Python 3.11.9 installed on your system.
+ - Navigate to the Project Folder : ```cd stock_price_prediction```
+ - Create a Virtual Environment: ```python -m venv venv```
+ - Open the Project in Visual Studio Code: ```code .```
+ - Activate the Virtual Environment: venv\Scripts\activate
+ - Upgrade pip: python -m pip install --upgrade pip
+ - Install Required Dependencies: pip install -r requirements.txt
