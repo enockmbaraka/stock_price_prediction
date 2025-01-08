@@ -275,6 +275,8 @@ During both hyperparameter tuning and training, I rescaled the time series data 
 
 ### Model Training 
 
+I decided to use the LSTM architecture for the [Google](https://github.com/f-kuzey-edes-huyal/stock_price_prediction/blob/main/main_train_google.py), [Apple](https://github.com/f-kuzey-edes-huyal/stock_price_prediction/blob/main/main_train_google.py), and [NVIDIA](https://github.com/f-kuzey-edes-huyal/stock_price_prediction/blob/main/main_train_nvidia.py) data, as it performed better during hyperparameter tuning. For [Meta](https://github.com/f-kuzey-edes-huyal/stock_price_prediction/blob/main/main_train_meta.py), the RNN architecture yielded marginally better results compared to the other models.
+
 __Why Use Early Stopping?__
 Early stopping is a regularization technique that helps prevent overfitting by halting the training process when the model's performance on the validation set stops improving. This ensures that the model generalizes well to unseen data rather than memorizing patterns from the training data.
 
