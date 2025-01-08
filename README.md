@@ -441,6 +441,8 @@ This error was resolved after properly configuring the inbound rules for my EC2 
 
 ## Acknowledgements
 
+I want to express my thanks to Ajith Punnakula for the invaluable discussions we had throughout this project and during the Machine Learning Zoomcamp. His insights on coding practices, repository organization, and cloud deployment were incredibly enlightening.
+
 ## Installation
 
 ```git clone https://github.com/f-kuzey-edes-huyal/stock_price_prediction.git```
