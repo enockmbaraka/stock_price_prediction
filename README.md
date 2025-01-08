@@ -372,9 +372,9 @@ First, build the Docker image for the application.
 
 Then, run the Docker container to deploy the model.
 
-To test your model: Activate the virtual environment in another terminal (```venv\Scripts\activate```): and test the model (```python test_all_companies.py```)
-
 <code> docker run -p 8000:8000 stockmarket </code>
+
+To test your model: Activate the virtual environment in another terminal (```venv\Scripts\activate```): and test the model (```python test_all_companies.py```)
 
 ![](https://github.com/f-kuzey-edes-huyal/stock_price_prediction/blob/main/results/docker_running_fastapi.png)
 
