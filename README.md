@@ -327,7 +327,9 @@ For Nvidia, the predicted prices closely follow the actual stock prices, which i
 
 ![](https://github.com/f-kuzey-edes-huyal/stock_price_prediction/blob/main/results/nvidia_result.png)
 
-We may achieve better results by using a smaller time_step (such as 35 or 40) instead of 60, along with an alternative normalization technique, which could improve model performance, especially for noisy time series like Apple's stock data. For example, using a Robust Scaler or Quantile Transformer might help reduce the impact of outliers and noise, allowing the model to generalize better.
+To improve Apple’s performance, we may achieve better results by using a smaller time_step (such as 35 or 40) instead of 60, along with an alternative normalization technique. This could enhance model performance, especially for noisy time series like Apple’s stock data. For example, using a Robust Scaler or Quantile Transformer might help mitigate the impact of outliers and noise, allowing the model to generalize more effectively.
+
+.
 
 Initially, I was uncertain whether to tune ```the time_step``` parameter or apply different normalization techniques for each time series. However, I decided to fix certain conditions to ensure a fair and consistent comparison across the four companies. 
 
