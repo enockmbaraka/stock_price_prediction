@@ -325,6 +325,10 @@ For Nvidia, the predicted prices closely follow the actual stock prices, which i
 
 ![](https://github.com/f-kuzey-edes-huyal/stock_price_prediction/blob/main/results/nvidia_result.png)
 
+We may achieve better results by using a smaller time_step (such as 35 or 40) instead of 60, along with an alternative normalization technique, which could improve model performance, especially for noisy time series like Apple's stock data. For example, using a Robust Scaler or Quantile Transformer might help reduce the impact of outliers and noise, allowing the model to generalize better.
+
+Initially, I was uncertain whether to tune ```the time_step``` parameter or apply different normalization techniques for each time series. However, I decided to fix certain conditions to ensure a fair and consistent comparison across the four companies. 
+
 ## Deployment with FastAPI
 
 FastAPI is faster than Flask because it is built on ASGI and uses asynchronous programming, allowing it to handle high-concurrency workloads more efficiently. Unlike Flask, FastAPI automatically generates interactive API documentation (e.g., Swagger UI), which saves time and simplifies collaboration. It also uses Python's type hints for automatic request validation, reducing the risk of errors, whereas Flask requires additional libraries or manual validation. While Flask is lightweight and flexible, FastAPI's modern design makes it better suited for building APIs that need to scale or handle real-time requests.
