@@ -447,6 +447,6 @@ This error was resolved after properly configuring the inbound rules for my EC2 
  - Navigate to the Project Folder : ```cd stock_price_prediction```
  - Create a Virtual Environment: ```python -m venv venv```
  - Open the Project in Visual Studio Code: ```code .```
- - Activate the Virtual Environment: venv\Scripts\activate
- - Upgrade pip: python -m pip install --upgrade pip
- - Install Required Dependencies: pip install -r requirements.txt
+ - Activate the Virtual Environment: ```venv\Scripts\activate```
+ - Upgrade pip: ```python -m pip install --upgrade pip```
+ - Install Required Dependencies: ```pip install -r requirements.txt```
