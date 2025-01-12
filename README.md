@@ -55,6 +55,45 @@ My project focuses on predicting the stock market's closing price for the 61st d
 
 The project is organized as follows:
 
+├── eda/
+    ├── eda_stock_market_price_december12.ipynb
+    ├── figures/
+├── inputs/
+    ├── aapl_stock_data.csv
+    ├── google_stock_data.csv
+    ├── meta_stock_data.csv
+    ├── nvda_stock_data.csv
+    ├── apple_stock_cleaned.csv
+    ├── google_stock_cleaned.csv
+    ├── meta_stock_cleaned.csv
+    ├── nvidia_stock_cleaned.csv
+├── outputs/
+    ├── apple_scale.pkl
+    ├── google_scale.pkl
+    ├── meta_scale.pkl
+    ├── nvidia_scale.pkl
+    ├── stock_price_lstm_apple_model.keras
+    ├── stock_price_rnn_google_model.keras
+    ├── stock_price_rnn_meta_model.keras
+    ├── stock_price_lstm_nvidia_model.keras
+├── parameter_tuning/
+    ├── hyperparameter_tuning_apple_last.ipynb
+    ├── hyperparameter_tuning_google_last.ipynb
+    ├── hyperparameter_tuning_meta_last.ipynb
+    ├── hyperparameter_tuning_nvidia_last.ipynb
+├── .gitignore
+├── Dockerfile
+├── README.md
+├── downloading_relevant_data.ipynb
+├── main.py
+├── main_train_apple.py
+├── main_train_google.py
+├── main_train_meta.py
+├── main_train_nvidia.py
+├── main_train_google.ipynb
+├── requirements.txt
+├── test_all_companies.py
+├── test_aws.py
 
 
 
