@@ -4,33 +4,35 @@
 # Table of Contents
 
 1. [Stock Market Price Estimation](#stock-market-price-estimation)
-   - [Comparison of Moving Averages](#comparison-of-moving-averages)
+ - [Comparison of Moving Averages](#comparison-of-moving-averages)
    - [Time Series Analysis Comments for Google, Meta, Apple, and NVIDIA](#time-series-analysis-comments-for-google-meta-apple-and-nvidia)
    - [Removing Outliers](#removing-outliers)
 
-2. [Data Collection](#data-collection)
+2. [Project Structure](#project-structure)
 
-3. [Stock Price Dataset Description](#stock-price-dataset-description)
+3. [Data Collection](#data-collection)
 
-4. [EDA (Exploratory Data Analysis)](#eda-exploratory-data-analysis)
+4. [Stock Price Dataset Description](#stock-price-dataset-description)
 
-5. [Training](#training)
+5. [EDA (Exploratory Data Analysis)](#eda-exploratory-data-analysis)
+
+6. [Training](#training)
    - [Models](#models)
    - [Metrics](#metrics)
    - [Hyperparameter Tuning](#hyperparameter-tuning)
    - [Model Training](#model-training)
 
-6. [Deployment with FastAPI](#deployment-with-fastapi)
+7. [Deployment with FastAPI](#deployment-with-fastapi)
 
-7. [Containerization using Docker](#containerization-using-docker)
+8. [Containerization using Docker](#containerization-using-docker)
 
-8. [Deployment to Cloud](#deployment-to-cloud)
+9. [Deployment to Cloud](#deployment-to-cloud)
 
-9. [Installation](#installation)
+10. [Installation](#installation)
 
-10. [License](#license)
+11. [License](#license)
 
-11. [Acknowledgements](#acknowledgements)
+12. [Acknowledgements](#acknowledgements)
 
 
 
@@ -47,6 +49,53 @@ Inaccurate estimations can lead to:
 My aim is to analyze stock market price data for Google, Meta, Apple, and NVIDIA between October 30, 2021, and October 30, 2024, and provide an estimator while deploying my model both locally and to the cloud.
 
 My project focuses on predicting the stock market's closing price for the 61st day based on the preceding 60 days of data. This provides an estimated future stock price, which can assist individuals in evaluating investment opportunities. Users can compare the predicted prices of companies such as Google, Meta, Apple, or NVIDIA to make more informed decisions about where to invest.
+
+## Project Structure
+
+The project is organized as follows:
+
+├── eda/
+    ├── eda_stock_market_price_december12.ipynb
+    ├── figures/
+├── inputs/
+    ├── aapl_stock_data.csv
+    ├── google_stock_data.csv
+    ├── meta_stock_data.csv
+    ├── nvda_stock_data.csv
+    ├── apple_stock_cleaned.csv
+    ├── google_stock_cleaned.csv
+    ├── meta_stock_cleaned.csv
+    ├── nvidia_stock_cleaned.csv
+├── outputs/
+    ├── apple_scale.pkl
+    ├── google_scale.pkl
+    ├── meta_scale.pkl
+    ├── nvidia_scale.pkl
+    ├── stock_price_lstm_apple_model.keras
+    ├── stock_price_rnn_google_model.keras
+    ├── stock_price_rnn_meta_model.keras
+    ├── stock_price_lstm_nvidia_model.keras
+├── parameter_tuning/
+    ├── hyperparameter_tuning_apple_last.ipynb
+    ├── hyperparameter_tuning_google_last.ipynb
+    ├── hyperparameter_tuning_meta_last.ipynb
+    ├── hyperparameter_tuning_nvidia_last.ipynb
+├── results/
+    ├── Figures
+├── .gitignore
+├── Dockerfile
+├── README.md
+├── downloading_relevant_data.ipynb
+├── main.py
+├── main_train_apple.py
+├── main_train_google.py
+├── main_train_meta.py
+├── main_train_nvidia.py
+├── main_train_google.ipynb
+├── requirements.txt
+├── test_all_companies.py
+├── test_aws.py
+
 
 ## [Data Collection](https://github.com/f-kuzey-edes-huyal/stock_price_prediction/blob/main/downloading_relevant_data.ipynb)
 
