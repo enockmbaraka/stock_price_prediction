@@ -4,9 +4,7 @@
 # Table of Contents
 
 1. [Stock Market Price Estimation](#stock-market-price-estimation)
-   - [Comparison of Moving Averages](#comparison-of-moving-averages)
-   - [Time Series Analysis Comments for Google, Meta, Apple, and NVIDIA](#time-series-analysis-comments-for-google-meta-apple-and-nvidia)
-   - [Removing Outliers](#removing-outliers)
+  
 
 2. [Project Structure](#project-structure)
 
@@ -15,6 +13,9 @@
 4. [Stock Price Dataset Description](#stock-price-dataset-description)
 
 5. [EDA (Exploratory Data Analysis)](#eda-exploratory-data-analysis)
+   - [Comparison of Moving Averages](#comparison-of-moving-averages)
+   - [Time Series Analysis Comments for Google, Meta, Apple, and NVIDIA](#time-series-analysis-comments-for-google-meta-apple-and-nvidia)
+   - [Removing Outliers](#removing-outliers)
 
 6. [Training](#training)
    - [Models](#models)
