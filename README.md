@@ -82,6 +82,8 @@ The project is organized as follows:
 │   ├── hyperparameter_tuning_google_last.ipynb
 │   ├── hyperparameter_tuning_meta_last.ipynb
 │   └── hyperparameter_tuning_nvidia_last.ipynb
+├── results/
+    ├── figures
 ├── .gitignore
 ├── Dockerfile
 ├── README.md
