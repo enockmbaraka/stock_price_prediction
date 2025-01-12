@@ -54,8 +54,8 @@ My project focuses on predicting the stock market's closing price for the 61st d
 ## Project Structure
 
 The project is organized as follows:
-
-```stock_price_prediction/
+```
+stock_price_prediction/
 ├── eda/
 │   ├── eda_stock_market_price_december12.ipynb
 │   └── figures/
