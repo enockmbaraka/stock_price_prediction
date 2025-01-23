@@ -498,6 +498,9 @@ I want to express my thanks to Ajith Punnakula for the invaluable discussions w
 
 And lastly, even though it is not directly related to this project, I want to thank the reviewers of my midterm project for helping me write more structured code and for their encouraging comments.
 
+## Notes to Myself
+- You got full points from the repository :purple_heart:  :sparkling_heart: :star2:.
+- Vijaya Krishna from Omdena recommended using AI agents, which, as I understand, are particularly useful for web scraping. I will allocate time to understand AI agents more deeply and use them in practical applications.
 ## Installation
 
 ```git clone https://github.com/f-kuzey-edes-huyal/stock_price_prediction.git```
